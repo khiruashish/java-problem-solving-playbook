@@ -1,0 +1,170 @@
+site_name: Java Problem-Solving Playbook
+site_description: Step-by-step Java problem solving from Easy to Expert — strings, arrays, logic, recursion, Java 8 streams, data structures & algorithms.
+site_url: https://khiruashish.github.io/java-problem-solving-playbook/
+repo_url: https://github.com/khiruashish/java-problem-solving-playbook
+repo_name: java-problem-solving-playbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/language-java
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - assets/css/3d.css
+extra_javascript:
+  - assets/js/tilt.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Foundations:
+      - 00-foundations/index.md
+      - Problem-solving framework: 00-foundations/problem-solving-framework.md
+      - Big-O cheat sheet: 00-foundations/big-o.md
+      - Recursion mental model: 00-foundations/recursion-mental-model.md
+      - Java toolbox: 00-foundations/java-toolbox.md
+  - Strings:
+      - 01-strings/index.md
+      - Easy:
+          - Reverse a string: 01-strings/reverse-string.md
+          - Palindrome check: 01-strings/palindrome.md
+          - Count vowels & consonants: 01-strings/vowel-consonant-count.md
+          - Character frequency: 01-strings/character-frequency.md
+          - Anagram check: 01-strings/anagram.md
+          - First non-repeating char: 01-strings/first-non-repeating-char.md
+      - Medium:
+          - Reverse words: 01-strings/reverse-words.md
+          - String compression: 01-strings/string-compression.md
+          - Longest common prefix: 01-strings/longest-common-prefix.md
+          - Valid parentheses: 01-strings/valid-parentheses.md
+          - String permutations: 01-strings/string-permutations.md
+          - Group anagrams: 01-strings/group-anagrams.md
+      - Hard:
+          - Longest substring w/o repeating: 01-strings/longest-substring-without-repeating.md
+          - Longest palindromic substring: 01-strings/longest-palindromic-substring.md
+      - Expert:
+          - Minimum window substring: 01-strings/minimum-window-substring.md
+          - KMP & Rabin–Karp: 01-strings/kmp-pattern-search.md
+  - Arrays:
+      - 02-arrays/index.md
+      - Easy:
+          - Max & min: 02-arrays/max-min.md
+          - Reverse array: 02-arrays/reverse-array.md
+          - Second largest: 02-arrays/second-largest.md
+          - Move zeros: 02-arrays/move-zeros.md
+          - Remove duplicates (sorted): 02-arrays/remove-duplicates-sorted.md
+          - Missing number: 02-arrays/missing-number.md
+      - Medium:
+          - Two sum: 02-arrays/two-sum.md
+          - Rotate array: 02-arrays/rotate-array.md
+          - Kadane max subarray: 02-arrays/max-subarray-sum.md
+          - Buy & sell stock: 02-arrays/buy-sell-stock.md
+      - Hard:
+          - Product except self: 02-arrays/product-except-self.md
+          - Merge intervals: 02-arrays/merge-intervals.md
+          - Next permutation: 02-arrays/next-permutation.md
+      - Expert:
+          - Trapping rain water: 02-arrays/trapping-rain-water.md
+  - Logical & Math:
+      - 03-logical/index.md
+      - FizzBuzz: 03-logical/fizzbuzz.md
+      - Reverse & palindrome number: 03-logical/reverse-number.md
+      - Armstrong number: 03-logical/armstrong-number.md
+      - GCD & LCM: 03-logical/gcd-lcm.md
+      - Primes & sieve: 03-logical/prime-numbers.md
+  - Recursion:
+      - 04-recursion/index.md
+      - Factorial: 04-recursion/factorial.md
+      - Sum of digits: 04-recursion/sum-of-digits.md
+      - Fibonacci: 04-recursion/fibonacci.md
+      - Fast power: 04-recursion/power.md
+      - Tower of Hanoi: 04-recursion/tower-of-hanoi.md
+      - Subsets: 04-recursion/subsets.md
+      - N-Queens: 04-recursion/n-queens.md
+  - Java 8 Streams:
+      - 05-java8/index.md
+      - Numbers & lists: 05-java8/stream-basics.md
+      - Strings: 05-java8/string-streams.md
+      - Employee dataset: 05-java8/employee-streams.md
+  - DSA (planned):
+      - Linked List: planned/06-linked-list.md
+      - Stack & Queue: planned/07-stack-queue.md
+      - Hashing: planned/08-hashing.md
+      - Searching & Sorting: planned/09-searching-sorting.md
+      - Trees & BST: planned/10-trees.md
+      - Heap: planned/11-heap.md
+      - Graphs: planned/12-graphs.md
+      - Dynamic Programming: planned/13-dynamic-programming.md
+      - Greedy: planned/14-greedy.md
+      - Bit Manipulation: planned/15-bit-manipulation.md
+      - Tries & Advanced: planned/16-tries-advanced.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/khiruashish/java-problem-solving-playbook

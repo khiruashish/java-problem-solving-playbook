@@ -246,8 +246,24 @@ nav:
       - Expert:
           - Median of a stream: 11-heap/median-of-stream.md
           - Binary heap from scratch: 11-heap/binary-heap.md
+  - Graphs:
+      - 12-graphs/index.md
+      - Easy:
+          - BFS & DFS: 12-graphs/bfs-dfs.md
+      - Medium:
+          - Number of islands: 12-graphs/number-of-islands.md
+          - Cycle detection: 12-graphs/cycle-detection.md
+          - Topological sort: 12-graphs/topological-sort.md
+          - Rotting oranges: 12-graphs/rotting-oranges.md
+      - Hard:
+          - Course schedule: 12-graphs/course-schedule.md
+          - Dijkstra: 12-graphs/dijkstra.md
+          - Union-Find: 12-graphs/union-find.md
+      - Expert:
+          - Word ladder: 12-graphs/word-ladder.md
+          - Minimum spanning tree: 12-graphs/minimum-spanning-tree.md
+          - Bellman-Ford & Floyd-Warshall: 12-graphs/bellman-ford-floyd-warshall.md
   - DSA (planned):
-      - Graphs: planned/12-graphs.md
       - Dynamic Programming: planned/13-dynamic-programming.md
       - Greedy: planned/14-greedy.md
       - Bit Manipulation: planned/15-bit-manipulation.md

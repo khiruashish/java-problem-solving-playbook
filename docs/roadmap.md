@@ -17,7 +17,7 @@
 | 09 | [Searching & Sorting](09-searching-sorting/index.md) | ✅ | 11 (Easy → Expert), from binary search templates to median of two arrays and binary search on the answer |
 | 10 | [Trees & BST](10-trees/index.md) | ✅ | 11 (Easy → Expert), traversals (incl. Morris) to serialize/deserialize and max path sum |
 | 11 | [Heap](11-heap/index.md) | ✅ | 7 (Easy → Expert), top-k patterns, two-heap median and a heap from scratch with heapsort |
-| 12 | [Graphs](planned/12-graphs.md) | 🚧 | |
+| 12 | [Graphs](12-graphs/index.md) | ✅ | 11 (Easy → Expert), BFS/DFS to Dijkstra, Union-Find, MST, Bellman-Ford and Floyd-Warshall |
 | 13 | [Dynamic Programming](planned/13-dynamic-programming.md) | 🚧 | |
 | 14 | [Greedy](planned/14-greedy.md) | 🚧 | |
 | 15 | [Bit Manipulation](planned/15-bit-manipulation.md) | 🚧 | |

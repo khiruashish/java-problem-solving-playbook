@@ -16,7 +16,7 @@
 | "kth largest in a stream" | the root of a size-k min-heap |
 | "merge k sorted …" | heap of the k current heads |
 | "median of a stream" | two heaps (max-heap for the low half, min-heap for the high half) |
-| "always process the most/least urgent next" | scheduling, [Dijkstra](../planned/12-graphs.md) |
+| "always process the most/least urgent next" | scheduling, [Dijkstra](../12-graphs/index.md) |
 
 !!! tip "Why a min-heap for the k **largest**?"
     You need to evict the *weakest* of your current top-k quickly, and that's the minimum. Keeping the heap at size k

@@ -263,8 +263,25 @@ nav:
           - Word ladder: 12-graphs/word-ladder.md
           - Minimum spanning tree: 12-graphs/minimum-spanning-tree.md
           - Bellman-Ford & Floyd-Warshall: 12-graphs/bellman-ford-floyd-warshall.md
+  - Dynamic Programming:
+      - 13-dynamic-programming/index.md
+      - Easy:
+          - Climbing stairs: 13-dynamic-programming/climbing-stairs.md
+          - House robber: 13-dynamic-programming/house-robber.md
+      - Medium:
+          - Coin change: 13-dynamic-programming/coin-change.md
+          - Longest increasing subsequence: 13-dynamic-programming/longest-increasing-subsequence.md
+          - Unique paths: 13-dynamic-programming/unique-paths.md
+          - 0/1 knapsack: 13-dynamic-programming/knapsack.md
+      - Hard:
+          - Longest common subsequence: 13-dynamic-programming/longest-common-subsequence.md
+          - Edit distance: 13-dynamic-programming/edit-distance.md
+          - Partition equal subset: 13-dynamic-programming/partition-equal-subset.md
+      - Expert:
+          - Word break: 13-dynamic-programming/word-break.md
+          - Matrix chain multiplication: 13-dynamic-programming/matrix-chain-multiplication.md
+          - Burst balloons: 13-dynamic-programming/burst-balloons.md
   - DSA (planned):
-      - Dynamic Programming: planned/13-dynamic-programming.md
       - Greedy: planned/14-greedy.md
       - Bit Manipulation: planned/15-bit-manipulation.md
       - Tries & Advanced: planned/16-tries-advanced.md

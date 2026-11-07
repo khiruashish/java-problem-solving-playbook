@@ -36,4 +36,4 @@ Return the k-th smallest element (1-based) of an unsorted array. `[7,10,4,3,20,1
 | Median of medians | O(n) worst | O(log n) | ❌ (complex, rarely asked) |
 
 ## Related
-[Top K frequent](../08-hashing/top-k-frequent.md) · K closest points to the origin · Kth largest in a stream ([Heap](../planned/11-heap.md)).
+[Top K frequent](../08-hashing/top-k-frequent.md) · K closest points to the origin · Kth largest in a stream ([Heap](../11-heap/index.md)).

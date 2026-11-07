@@ -32,7 +32,7 @@ return lo;   // first true, or n if none
 | Insertion | O(n) | O(n²) | O(n²) | O(1) | ✅ | best for small or nearly sorted input |
 | Merge | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅ | linked lists, external sort |
 | Quick | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌ | fastest in practice, random pivot |
-| Heap | O(n log n) | O(n log n) | O(n log n) | O(1) | ❌ | see [Heap](../planned/11-heap.md) |
+| Heap | O(n log n) | O(n log n) | O(n log n) | O(1) | ❌ | see [Heap](../11-heap/index.md) |
 | Counting | O(n + k) | O(n + k) | O(n + k) | O(k) | ✅ | small integer range |
 
 **What Java uses**: `Arrays.sort(int[])` is a dual-pivot quicksort, since primitives don't need stability.

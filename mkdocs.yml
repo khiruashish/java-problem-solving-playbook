@@ -233,8 +233,20 @@ nav:
       - Expert:
           - Serialize & deserialize: 10-trees/serialize-tree.md
           - Max path sum: 10-trees/max-path-sum.md
+  - Heap:
+      - 11-heap/index.md
+      - Easy:
+          - Kth largest: 11-heap/kth-largest.md
+      - Medium:
+          - Top K frequent words: 11-heap/top-k-frequent-words.md
+          - K closest points: 11-heap/k-closest-points.md
+      - Hard:
+          - Merge K sorted arrays: 11-heap/merge-k-sorted-arrays.md
+          - Task scheduler: 11-heap/task-scheduler.md
+      - Expert:
+          - Median of a stream: 11-heap/median-of-stream.md
+          - Binary heap from scratch: 11-heap/binary-heap.md
   - DSA (planned):
-      - Heap: planned/11-heap.md
       - Graphs: planned/12-graphs.md
       - Dynamic Programming: planned/13-dynamic-programming.md
       - Greedy: planned/14-greedy.md

@@ -42,4 +42,4 @@ Reading from the right gives 1, then 2, so k = 2 is satisfied.
 You want to evict the weakest candidate quickly, and the weakest of the current top k sits at the root of a min-heap.
 
 ## Related
-Top K frequent words (ties broken alphabetically) · Sort characters by frequency · [Heap topic](../planned/11-heap.md).
+Top K frequent words (ties broken alphabetically) · Sort characters by frequency · [Heap topic](../11-heap/index.md).

@@ -199,8 +199,24 @@ nav:
           - 4Sum II: 08-hashing/four-sum-count.md
       - Expert:
           - HashMap from scratch: 08-hashing/my-hash-map.md
+  - Searching & Sorting:
+      - 09-searching-sorting/index.md
+      - Easy:
+          - Linear & binary search: 09-searching-sorting/binary-search.md
+          - Elementary sorts: 09-searching-sorting/elementary-sorts.md
+      - Medium:
+          - First & last occurrence: 09-searching-sorting/first-last-occurrence.md
+          - Rotated sorted array: 09-searching-sorting/rotated-sorted-array.md
+          - Merge & quick sort: 09-searching-sorting/merge-quick-sort.md
+          - Sort 0s 1s 2s: 09-searching-sorting/sort-colors.md
+      - Hard:
+          - Find peak element: 09-searching-sorting/find-peak-element.md
+          - Kth smallest (Quickselect): 09-searching-sorting/kth-smallest.md
+          - Count inversions: 09-searching-sorting/count-inversions.md
+      - Expert:
+          - Median of two sorted arrays: 09-searching-sorting/median-two-sorted-arrays.md
+          - Split array largest sum: 09-searching-sorting/split-array-largest-sum.md
   - DSA (planned):
-      - Searching & Sorting: planned/09-searching-sorting.md
       - Trees & BST: planned/10-trees.md
       - Heap: planned/11-heap.md
       - Graphs: planned/12-graphs.md

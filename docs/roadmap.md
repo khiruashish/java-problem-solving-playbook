@@ -14,7 +14,7 @@
 | 06 | [Linked List](06-linked-list/index.md) | ✅ | 12 (Easy → Expert), including LRU cache and merge K lists |
 | 07 | [Stack & Queue](07-stack-queue/index.md) | ✅ | 10 (Easy → Expert), including monotonic stack/deque, shunting-yard and calculator |
 | 08 | [Hashing](08-hashing/index.md) | ✅ | 8 (Easy → Expert), including prefix-sum + map and a HashMap from scratch |
-| 09 | [Searching & Sorting](planned/09-searching-sorting.md) | 🚧 | |
+| 09 | [Searching & Sorting](09-searching-sorting/index.md) | ✅ | 11 (Easy → Expert), from binary search templates to median of two arrays and binary search on the answer |
 | 10 | [Trees & BST](planned/10-trees.md) | 🚧 | |
 | 11 | [Heap / Priority Queue](planned/11-heap.md) | 🚧 | |
 | 12 | [Graphs](planned/12-graphs.md) | 🚧 | |

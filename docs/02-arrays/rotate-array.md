@@ -38,4 +38,4 @@ reverse [k,n) 5 6 7 | 1 2 3 4   ✅
 | Juggling (GCD cycles) | O(n) | O(1) |
 
 ## Follow-up
-Left rotation by d is right rotation by `n − d`. Searching a rotated sorted array is a [binary search variant](../planned/09-searching-sorting.md).
+Left rotation by d is right rotation by `n − d`. Searching a rotated sorted array is a [binary search variant](../09-searching-sorting/index.md).

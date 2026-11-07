@@ -88,81 +88,254 @@ nav:
       - Big-O cheat sheet: 00-foundations/big-o.md
       - Recursion mental model: 00-foundations/recursion-mental-model.md
       - Java toolbox: 00-foundations/java-toolbox.md
-  - Strings:
-      - 01-strings/index.md
-      - Easy:
-          - Reverse a string: 01-strings/reverse-string.md
-          - Palindrome check: 01-strings/palindrome.md
-          - Count vowels & consonants: 01-strings/vowel-consonant-count.md
-          - Character frequency: 01-strings/character-frequency.md
-          - Anagram check: 01-strings/anagram.md
-          - First non-repeating char: 01-strings/first-non-repeating-char.md
-      - Medium:
-          - Reverse words: 01-strings/reverse-words.md
-          - String compression: 01-strings/string-compression.md
-          - Longest common prefix: 01-strings/longest-common-prefix.md
-          - Valid parentheses: 01-strings/valid-parentheses.md
-          - String permutations: 01-strings/string-permutations.md
-          - Group anagrams: 01-strings/group-anagrams.md
-      - Hard:
-          - Longest substring w/o repeating: 01-strings/longest-substring-without-repeating.md
-          - Longest palindromic substring: 01-strings/longest-palindromic-substring.md
-      - Expert:
-          - Minimum window substring: 01-strings/minimum-window-substring.md
-          - KMP & Rabin–Karp: 01-strings/kmp-pattern-search.md
-  - Arrays:
-      - 02-arrays/index.md
-      - Easy:
-          - Max & min: 02-arrays/max-min.md
-          - Reverse array: 02-arrays/reverse-array.md
-          - Second largest: 02-arrays/second-largest.md
-          - Move zeros: 02-arrays/move-zeros.md
-          - Remove duplicates (sorted): 02-arrays/remove-duplicates-sorted.md
-          - Missing number: 02-arrays/missing-number.md
-      - Medium:
-          - Two sum: 02-arrays/two-sum.md
-          - Rotate array: 02-arrays/rotate-array.md
-          - Kadane max subarray: 02-arrays/max-subarray-sum.md
-          - Buy & sell stock: 02-arrays/buy-sell-stock.md
-      - Hard:
-          - Product except self: 02-arrays/product-except-self.md
-          - Merge intervals: 02-arrays/merge-intervals.md
-          - Next permutation: 02-arrays/next-permutation.md
-      - Expert:
-          - Trapping rain water: 02-arrays/trapping-rain-water.md
-  - Logical & Math:
-      - 03-logical/index.md
-      - FizzBuzz: 03-logical/fizzbuzz.md
-      - Reverse & palindrome number: 03-logical/reverse-number.md
-      - Armstrong number: 03-logical/armstrong-number.md
-      - GCD & LCM: 03-logical/gcd-lcm.md
-      - Primes & sieve: 03-logical/prime-numbers.md
-  - Recursion:
-      - 04-recursion/index.md
-      - Factorial: 04-recursion/factorial.md
-      - Sum of digits: 04-recursion/sum-of-digits.md
-      - Fibonacci: 04-recursion/fibonacci.md
-      - Fast power: 04-recursion/power.md
-      - Tower of Hanoi: 04-recursion/tower-of-hanoi.md
-      - Subsets: 04-recursion/subsets.md
-      - N-Queens: 04-recursion/n-queens.md
-  - Java 8 Streams:
-      - 05-java8/index.md
-      - Numbers & lists: 05-java8/stream-basics.md
-      - Strings: 05-java8/string-streams.md
-      - Employee dataset: 05-java8/employee-streams.md
-  - DSA (planned):
-      - Linked List: planned/06-linked-list.md
-      - Stack & Queue: planned/07-stack-queue.md
-      - Hashing: planned/08-hashing.md
-      - Searching & Sorting: planned/09-searching-sorting.md
-      - Trees & BST: planned/10-trees.md
-      - Heap: planned/11-heap.md
-      - Graphs: planned/12-graphs.md
-      - Dynamic Programming: planned/13-dynamic-programming.md
-      - Greedy: planned/14-greedy.md
-      - Bit Manipulation: planned/15-bit-manipulation.md
-      - Tries & Advanced: planned/16-tries-advanced.md
+  - Core Coding:
+      - Strings:
+          - 01-strings/index.md
+          - Easy:
+              - Reverse a string: 01-strings/reverse-string.md
+              - Palindrome check: 01-strings/palindrome.md
+              - Count vowels & consonants: 01-strings/vowel-consonant-count.md
+              - Character frequency: 01-strings/character-frequency.md
+              - Anagram check: 01-strings/anagram.md
+              - First non-repeating char: 01-strings/first-non-repeating-char.md
+          - Medium:
+              - Reverse words: 01-strings/reverse-words.md
+              - String compression: 01-strings/string-compression.md
+              - Longest common prefix: 01-strings/longest-common-prefix.md
+              - Valid parentheses: 01-strings/valid-parentheses.md
+              - String permutations: 01-strings/string-permutations.md
+              - Group anagrams: 01-strings/group-anagrams.md
+          - Hard:
+              - Longest substring w/o repeating: 01-strings/longest-substring-without-repeating.md
+              - Longest palindromic substring: 01-strings/longest-palindromic-substring.md
+          - Expert:
+              - Minimum window substring: 01-strings/minimum-window-substring.md
+              - KMP & Rabin–Karp: 01-strings/kmp-pattern-search.md
+      - Arrays:
+          - 02-arrays/index.md
+          - Easy:
+              - Max & min: 02-arrays/max-min.md
+              - Reverse array: 02-arrays/reverse-array.md
+              - Second largest: 02-arrays/second-largest.md
+              - Move zeros: 02-arrays/move-zeros.md
+              - Remove duplicates (sorted): 02-arrays/remove-duplicates-sorted.md
+              - Missing number: 02-arrays/missing-number.md
+          - Medium:
+              - Two sum: 02-arrays/two-sum.md
+              - Rotate array: 02-arrays/rotate-array.md
+              - Kadane max subarray: 02-arrays/max-subarray-sum.md
+              - Buy & sell stock: 02-arrays/buy-sell-stock.md
+          - Hard:
+              - Product except self: 02-arrays/product-except-self.md
+              - Merge intervals: 02-arrays/merge-intervals.md
+              - Next permutation: 02-arrays/next-permutation.md
+          - Expert:
+              - Trapping rain water: 02-arrays/trapping-rain-water.md
+      - Logical & Math:
+          - 03-logical/index.md
+          - FizzBuzz: 03-logical/fizzbuzz.md
+          - Reverse & palindrome number: 03-logical/reverse-number.md
+          - Armstrong number: 03-logical/armstrong-number.md
+          - GCD & LCM: 03-logical/gcd-lcm.md
+          - Primes & sieve: 03-logical/prime-numbers.md
+          - Perfect & strong numbers: 03-logical/perfect-strong-numbers.md
+          - Leap year: 03-logical/leap-year.md
+          - Base conversion: 03-logical/base-conversion.md
+          - Pattern printing: 03-logical/pattern-printing.md
+          - LCM of 1..n: 03-logical/lcm-of-range.md
+      - Recursion:
+          - 04-recursion/index.md
+          - Factorial: 04-recursion/factorial.md
+          - Sum of digits: 04-recursion/sum-of-digits.md
+          - Fibonacci: 04-recursion/fibonacci.md
+          - Fast power: 04-recursion/power.md
+          - Tower of Hanoi: 04-recursion/tower-of-hanoi.md
+          - Generate parentheses: 04-recursion/generate-parentheses.md
+          - Letter combinations: 04-recursion/letter-combinations.md
+          - Subsets: 04-recursion/subsets.md
+          - Combination sum: 04-recursion/combination-sum.md
+          - Permutations II: 04-recursion/permutations-ii.md
+          - Word search: 04-recursion/word-search.md
+          - N-Queens: 04-recursion/n-queens.md
+          - Sudoku solver: 04-recursion/sudoku-solver.md
+      - Java 8 Streams:
+          - 05-java8/index.md
+          - Numbers & lists: 05-java8/stream-basics.md
+          - Strings: 05-java8/string-streams.md
+          - Employee dataset: 05-java8/employee-streams.md
+          - Optional deep-dive: 05-java8/optional.md
+          - Custom collectors: 05-java8/custom-collectors.md
+          - Parallel stream pitfalls: 05-java8/parallel-stream-pitfalls.md
+  - Data Structures:
+      - Linked List:
+          - 06-linked-list/index.md
+          - Easy:
+              - Reverse a linked list: 06-linked-list/reverse-linked-list.md
+              - Middle node: 06-linked-list/middle-node.md
+              - Merge two sorted lists: 06-linked-list/merge-two-sorted-lists.md
+          - Medium:
+              - Cycle detection & start: 06-linked-list/linked-list-cycle.md
+              - Remove Nth from end: 06-linked-list/remove-nth-from-end.md
+              - Palindrome list: 06-linked-list/palindrome-linked-list.md
+              - Intersection of two lists: 06-linked-list/intersection-of-two-lists.md
+          - Hard:
+              - Add two numbers: 06-linked-list/add-two-numbers.md
+              - Reverse k-group: 06-linked-list/reverse-k-group.md
+              - Copy random list: 06-linked-list/copy-random-list.md
+          - Expert:
+              - LRU cache: 06-linked-list/lru-cache.md
+              - Merge K sorted lists: 06-linked-list/merge-k-sorted-lists.md
+      - Stack & Queue:
+          - 07-stack-queue/index.md
+          - Easy:
+              - Stack with an array: 07-stack-queue/array-stack.md
+              - Queue using stacks: 07-stack-queue/queue-using-stacks.md
+          - Medium:
+              - Min stack: 07-stack-queue/min-stack.md
+              - Next greater element: 07-stack-queue/next-greater-element.md
+              - Evaluate RPN: 07-stack-queue/evaluate-rpn.md
+              - Daily temperatures: 07-stack-queue/daily-temperatures.md
+          - Hard:
+              - Infix to postfix: 07-stack-queue/infix-to-postfix.md
+              - Sliding window maximum: 07-stack-queue/sliding-window-maximum.md
+          - Expert:
+              - Largest rectangle in histogram: 07-stack-queue/largest-rectangle-histogram.md
+              - Basic calculator: 07-stack-queue/basic-calculator.md
+      - Hashing:
+          - 08-hashing/index.md
+          - Easy:
+              - Contains duplicate: 08-hashing/contains-duplicate.md
+              - Intersection of two arrays: 08-hashing/array-intersection.md
+          - Medium:
+              - Subarray sum equals K: 08-hashing/subarray-sum-equals-k.md
+              - Longest consecutive sequence: 08-hashing/longest-consecutive-sequence.md
+              - Top K frequent: 08-hashing/top-k-frequent.md
+          - Hard:
+              - Longest zero-sum subarray: 08-hashing/longest-zero-sum-subarray.md
+              - 4Sum II: 08-hashing/four-sum-count.md
+          - Expert:
+              - HashMap from scratch: 08-hashing/my-hash-map.md
+      - Trees & BST:
+          - 10-trees/index.md
+          - Easy:
+              - Traversals: 10-trees/traversals.md
+              - Height & balance: 10-trees/tree-height.md
+              - Level order: 10-trees/level-order.md
+          - Medium:
+              - Diameter: 10-trees/diameter.md
+              - Validate BST: 10-trees/validate-bst.md
+              - Lowest common ancestor: 10-trees/lowest-common-ancestor.md
+              - Tree views: 10-trees/tree-views.md
+          - Hard:
+              - Build from traversals: 10-trees/build-tree.md
+              - Zig-zag level order: 10-trees/zigzag-level-order.md
+          - Expert:
+              - Serialize & deserialize: 10-trees/serialize-tree.md
+              - Max path sum: 10-trees/max-path-sum.md
+      - Heap:
+          - 11-heap/index.md
+          - Easy:
+              - Kth largest: 11-heap/kth-largest.md
+          - Medium:
+              - Top K frequent words: 11-heap/top-k-frequent-words.md
+              - K closest points: 11-heap/k-closest-points.md
+          - Hard:
+              - Merge K sorted arrays: 11-heap/merge-k-sorted-arrays.md
+              - Task scheduler: 11-heap/task-scheduler.md
+          - Expert:
+              - Median of a stream: 11-heap/median-of-stream.md
+              - Binary heap from scratch: 11-heap/binary-heap.md
+      - Tries & Advanced:
+          - 16-tries-advanced/index.md
+          - Medium:
+              - Trie: 16-tries-advanced/trie.md
+              - LCP via trie: 16-tries-advanced/trie-longest-common-prefix.md
+          - Hard:
+              - Word search II: 16-tries-advanced/word-search-ii.md
+              - Autocomplete: 16-tries-advanced/autocomplete.md
+          - Expert:
+              - Segment tree: 16-tries-advanced/segment-tree.md
+              - Fenwick tree: 16-tries-advanced/fenwick-tree.md
+              - LFU cache: 16-tries-advanced/lfu-cache.md
+  - Algorithms:
+      - Searching & Sorting:
+          - 09-searching-sorting/index.md
+          - Easy:
+              - Linear & binary search: 09-searching-sorting/binary-search.md
+              - Elementary sorts: 09-searching-sorting/elementary-sorts.md
+          - Medium:
+              - First & last occurrence: 09-searching-sorting/first-last-occurrence.md
+              - Rotated sorted array: 09-searching-sorting/rotated-sorted-array.md
+              - Merge & quick sort: 09-searching-sorting/merge-quick-sort.md
+              - Sort 0s 1s 2s: 09-searching-sorting/sort-colors.md
+          - Hard:
+              - Find peak element: 09-searching-sorting/find-peak-element.md
+              - Kth smallest (Quickselect): 09-searching-sorting/kth-smallest.md
+              - Count inversions: 09-searching-sorting/count-inversions.md
+          - Expert:
+              - Median of two sorted arrays: 09-searching-sorting/median-two-sorted-arrays.md
+              - Split array largest sum: 09-searching-sorting/split-array-largest-sum.md
+      - Graphs:
+          - 12-graphs/index.md
+          - Easy:
+              - BFS & DFS: 12-graphs/bfs-dfs.md
+          - Medium:
+              - Number of islands: 12-graphs/number-of-islands.md
+              - Cycle detection: 12-graphs/cycle-detection.md
+              - Topological sort: 12-graphs/topological-sort.md
+              - Rotting oranges: 12-graphs/rotting-oranges.md
+          - Hard:
+              - Course schedule: 12-graphs/course-schedule.md
+              - Dijkstra: 12-graphs/dijkstra.md
+              - Union-Find: 12-graphs/union-find.md
+          - Expert:
+              - Word ladder: 12-graphs/word-ladder.md
+              - Minimum spanning tree: 12-graphs/minimum-spanning-tree.md
+              - Bellman-Ford & Floyd-Warshall: 12-graphs/bellman-ford-floyd-warshall.md
+      - Dynamic Programming:
+          - 13-dynamic-programming/index.md
+          - Easy:
+              - Climbing stairs: 13-dynamic-programming/climbing-stairs.md
+              - House robber: 13-dynamic-programming/house-robber.md
+          - Medium:
+              - Coin change: 13-dynamic-programming/coin-change.md
+              - Longest increasing subsequence: 13-dynamic-programming/longest-increasing-subsequence.md
+              - Unique paths: 13-dynamic-programming/unique-paths.md
+              - 0/1 knapsack: 13-dynamic-programming/knapsack.md
+          - Hard:
+              - Longest common subsequence: 13-dynamic-programming/longest-common-subsequence.md
+              - Edit distance: 13-dynamic-programming/edit-distance.md
+              - Partition equal subset: 13-dynamic-programming/partition-equal-subset.md
+          - Expert:
+              - Word break: 13-dynamic-programming/word-break.md
+              - Matrix chain multiplication: 13-dynamic-programming/matrix-chain-multiplication.md
+              - Burst balloons: 13-dynamic-programming/burst-balloons.md
+      - Greedy:
+          - 14-greedy/index.md
+          - Easy:
+              - Assign cookies: 14-greedy/assign-cookies.md
+          - Medium:
+              - Activity selection: 14-greedy/activity-selection.md
+              - Jump game: 14-greedy/jump-game.md
+              - Gas station: 14-greedy/gas-station.md
+          - Hard:
+              - Minimum platforms: 14-greedy/minimum-platforms.md
+              - Fractional knapsack: 14-greedy/fractional-knapsack.md
+          - Expert:
+              - Huffman coding: 14-greedy/huffman-coding.md
+      - Bit Manipulation:
+          - 15-bit-manipulation/index.md
+          - Easy:
+              - Bit basics: 15-bit-manipulation/bit-basics.md
+              - Power of two: 15-bit-manipulation/power-of-two.md
+              - Count set bits: 15-bit-manipulation/count-set-bits.md
+          - Medium:
+              - Single number I/II/III: 15-bit-manipulation/single-number.md
+              - XOR tricks: 15-bit-manipulation/xor-tricks.md
+          - Hard:
+              - Bitmask subsets: 15-bit-manipulation/bitmask-subsets.md
+          - Expert:
+              - Maximum XOR: 15-bit-manipulation/maximum-xor.md
 
 extra:
   social:

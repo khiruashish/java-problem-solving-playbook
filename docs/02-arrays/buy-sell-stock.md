@@ -30,4 +30,4 @@
 ```
 
 ## The series
-I (one transaction) ✅ · II (unlimited) ✅ · III / IV (at most k transactions, a DP over states) · with cooldown · with a transaction fee. These are covered in [DP](../planned/13-dynamic-programming.md).
+I (one transaction) ✅ · II (unlimited) ✅ · III / IV (at most k transactions, a DP over states) · with cooldown · with a transaction fee. These are covered in [DP](../13-dynamic-programming/index.md).

@@ -26,7 +26,13 @@ void backtrack(State s, List<Answer> out) {
 | 3 | [Fibonacci: naive → memo → iterative → matrix](fibonacci.md) | <span class="badge medium">Medium</span> | Tree → DP |
 | 4 | [Power (fast exponentiation)](power.md) | <span class="badge medium">Medium</span> | Divide & conquer |
 | 5 | [Tower of Hanoi](tower-of-hanoi.md) | <span class="badge medium">Medium</span> | Tree (2 calls) |
-| 6 | [Subsets / power set](subsets.md) | <span class="badge hard">Hard</span> | Backtracking |
-| 7 | [N-Queens](n-queens.md) | <span class="badge expert">Expert</span> | Backtracking + pruning |
+| 6 | [Generate parentheses](generate-parentheses.md) | <span class="badge medium">Medium</span> | Backtracking with open/close counts |
+| 7 | [Letter combinations of a phone number](letter-combinations.md) | <span class="badge medium">Medium</span> | Cartesian product |
+| 8 | [Subsets / power set](subsets.md) | <span class="badge hard">Hard</span> | Backtracking |
+| 9 | [Combination sum I & II](combination-sum.md) | <span class="badge hard">Hard</span> | Start index + duplicate skip |
+| 10 | [Permutations II (with duplicates)](permutations-ii.md) | <span class="badge hard">Hard</span> | Used-twin rule |
+| 11 | [Word search](word-search.md) | <span class="badge hard">Hard</span> | Grid backtracking |
+| 12 | [N-Queens](n-queens.md) | <span class="badge expert">Expert</span> | Backtracking + pruning |
+| 13 | [Sudoku solver](sudoku-solver.md) | <span class="badge expert">Expert</span> | Bitmasks + most-constrained cell |
 
 Also see: [String permutations](../01-strings/string-permutations.md) · [Longest common prefix (divide & conquer)](../01-strings/longest-common-prefix.md) · [Max subarray (divide & conquer)](../02-arrays/max-subarray-sum.md).

@@ -34,4 +34,4 @@ Distinct or not? (Here: distinct.) What should we return if there is none? (Here
 ```
 
 ## Follow-up
-The **Kth largest** element is a [heap](../planned/11-heap.md) of size k (O(n log k)) or Quickselect (O(n) on average).
+The **Kth largest** element is a [heap](../11-heap/index.md) of size k (O(n log k)) or Quickselect (O(n) on average).

@@ -31,13 +31,16 @@ joining(", ", "[", "]")
 summarizingDouble(f)                                // count/min/max/avg/sum in one pass
 ```
 
-## Question banks (Easy → Hard)
+## Question banks (Easy → Expert)
 
 | Bank | Questions | Level |
 |------|-----------|-------|
 | [Numbers & lists](stream-basics.md) | 17 | <span class="badge easy">Easy</span> → <span class="badge medium">Medium</span> |
 | [Strings](string-streams.md) | 15 | <span class="badge easy">Easy</span> → <span class="badge medium">Medium</span> |
 | [Employee dataset](employee-streams.md) | 17 | <span class="badge medium">Medium</span> → <span class="badge hard">Hard</span> |
+| [Optional deep-dive](optional.md) | 8 | <span class="badge medium">Medium</span> |
+| [Custom collectors & teeing](custom-collectors.md) | 6 | <span class="badge hard">Hard</span> |
+| [Parallel stream pitfalls](parallel-stream-pitfalls.md) | 4 | <span class="badge expert">Expert</span> |
 
 !!! warning "Pitfalls interviewers probe"
     - Streams are **single-use**. Reusing one throws `IllegalStateException`.

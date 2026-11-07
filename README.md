@@ -2,7 +2,7 @@
 
 A **MkDocs Material** site with a custom **3D theme** that teaches Java problem solving step by step,
 from **Easy to Expert**: strings, arrays, logical/math, recursion and backtracking, Java 8+ streams, and
-(next) every core data structure and algorithm.
+every core data structure and algorithm (linked lists through tries, segment trees and DP).
 
 Every problem includes:
 
@@ -33,17 +33,32 @@ src/main/java/com/playbook/<topic>/   one class per problem, one public static m
 src/test/java/com/playbook/<topic>/   JUnit 5 tests verifying every approach
 ```
 
-## Status
+## Status — complete curriculum
 
-| Topic | Problems |
-|-------|----------|
-| Foundations | 4 guides |
-| Strings | 16 ✅ |
-| Arrays | 14 ✅ |
-| Logical & Math | 5 ✅ |
-| Recursion & Backtracking | 7 ✅ |
-| Java 8 Streams | ~50 questions ✅ |
-| Linked List … Tries (06–16) | 🚧 planned, see `docs/roadmap.md` |
+| # | Topic | Problems |
+|---|-------|----------|
+| 00 | Foundations | 4 guides |
+| 01 | Strings | 16 |
+| 02 | Arrays | 14 |
+| 03 | Logical & Math | 10 |
+| 04 | Recursion & Backtracking | 13 |
+| 05 | Java 8+ Streams | ~70 questions (6 banks) |
+| 06 | Linked List | 12 |
+| 07 | Stack & Queue | 10 |
+| 08 | Hashing | 8 |
+| 09 | Searching & Sorting | 11 |
+| 10 | Trees & BST | 11 |
+| 11 | Heap / Priority Queue | 7 |
+| 12 | Graphs | 11 |
+| 13 | Dynamic Programming | 12 |
+| 14 | Greedy | 7 |
+| 15 | Bit Manipulation | 7 |
+| 16 | Tries & Advanced | 7 |
+| | **Total** | **156 problems + ~70 stream questions** |
+
+Every topic runs Easy → Expert. Most tests are **differential**: the optimal solution is checked against the brute force on
+hundreds of random inputs, and data structures built from scratch (HashMap, heap, LRU/LFU, trie, segment/Fenwick tree) are
+checked against a JDK or naive reference.
 
 ## Extending
 

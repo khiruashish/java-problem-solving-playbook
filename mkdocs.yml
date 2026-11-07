@@ -151,8 +151,25 @@ nav:
       - Numbers & lists: 05-java8/stream-basics.md
       - Strings: 05-java8/string-streams.md
       - Employee dataset: 05-java8/employee-streams.md
+  - Linked List:
+      - 06-linked-list/index.md
+      - Easy:
+          - Reverse a linked list: 06-linked-list/reverse-linked-list.md
+          - Middle node: 06-linked-list/middle-node.md
+          - Merge two sorted lists: 06-linked-list/merge-two-sorted-lists.md
+      - Medium:
+          - Cycle detection & start: 06-linked-list/linked-list-cycle.md
+          - Remove Nth from end: 06-linked-list/remove-nth-from-end.md
+          - Palindrome list: 06-linked-list/palindrome-linked-list.md
+          - Intersection of two lists: 06-linked-list/intersection-of-two-lists.md
+      - Hard:
+          - Add two numbers: 06-linked-list/add-two-numbers.md
+          - Reverse k-group: 06-linked-list/reverse-k-group.md
+          - Copy random list: 06-linked-list/copy-random-list.md
+      - Expert:
+          - LRU cache: 06-linked-list/lru-cache.md
+          - Merge K sorted lists: 06-linked-list/merge-k-sorted-lists.md
   - DSA (planned):
-      - Linked List: planned/06-linked-list.md
       - Stack & Queue: planned/07-stack-queue.md
       - Hashing: planned/08-hashing.md
       - Searching & Sorting: planned/09-searching-sorting.md

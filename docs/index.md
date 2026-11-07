@@ -61,11 +61,19 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     [:octicons-arrow-right-24: 3 question banks](05-java8/index.md)
 
--   :material-graph:{ .lg .middle } **06–16 · Data Structures & Algorithms**
+-   :material-link-variant:{ .lg .middle } **06 · Linked List**
 
     ---
 
-    Linked list, stack, hashing, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
+    Reversal, slow/fast pointers, Floyd's cycle, k-group reversal, LRU cache, merge K lists.
+
+    [:octicons-arrow-right-24: 12 problems](06-linked-list/index.md)
+
+-   :material-graph:{ .lg .middle } **07–16 · Data Structures & Algorithms**
+
+    ---
+
+    Stack, hashing, sorting, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
 
     [:octicons-arrow-right-24: Roadmap](roadmap.md)
 

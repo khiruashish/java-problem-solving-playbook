@@ -11,7 +11,7 @@
 | 03 | [Logical & Math](03-logical/index.md) | ✅ batch 1 | 5. 🚧 next: perfect/strong numbers, base conversion, pattern printing, swap without temp, leap year, LCM of range |
 | 04 | [Recursion & Backtracking](04-recursion/index.md) | ✅ batch 1 | 7. 🚧 next: combination sum, permutations II, word search, Sudoku solver, generate parentheses, letter combinations |
 | 05 | [Java 8+ Streams](05-java8/index.md) | ✅ | ~50 questions in 3 banks. 🚧 next: Optional deep-dive, custom Collector, parallel-stream pitfalls |
-| 06 | [Linked List](planned/06-linked-list.md) | 🚧 | |
+| 06 | [Linked List](06-linked-list/index.md) | ✅ | 12 (Easy → Expert), including LRU cache and merge K lists |
 | 07 | [Stack & Queue](planned/07-stack-queue.md) | 🚧 | |
 | 08 | [Hashing](planned/08-hashing.md) | 🚧 | |
 | 09 | [Searching & Sorting](planned/09-searching-sorting.md) | 🚧 | |

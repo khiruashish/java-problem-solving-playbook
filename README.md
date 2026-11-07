@@ -43,7 +43,8 @@ src/test/java/com/playbook/<topic>/   JUnit 5 tests verifying every approach
 | Logical & Math | 5 ✅ |
 | Recursion & Backtracking | 7 ✅ |
 | Java 8 Streams | ~50 questions ✅ |
-| Linked List … Tries (06–16) | 🚧 planned, see `docs/roadmap.md` |
+| Linked List | 12 ✅ |
+| Stack & Queue … Tries (07–16) | 🚧 planned, see `docs/roadmap.md` |
 
 ## Extending
 

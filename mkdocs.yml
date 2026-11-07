@@ -294,8 +294,20 @@ nav:
           - Fractional knapsack: 14-greedy/fractional-knapsack.md
       - Expert:
           - Huffman coding: 14-greedy/huffman-coding.md
+  - Bit Manipulation:
+      - 15-bit-manipulation/index.md
+      - Easy:
+          - Bit basics: 15-bit-manipulation/bit-basics.md
+          - Power of two: 15-bit-manipulation/power-of-two.md
+          - Count set bits: 15-bit-manipulation/count-set-bits.md
+      - Medium:
+          - Single number I/II/III: 15-bit-manipulation/single-number.md
+          - XOR tricks: 15-bit-manipulation/xor-tricks.md
+      - Hard:
+          - Bitmask subsets: 15-bit-manipulation/bitmask-subsets.md
+      - Expert:
+          - Maximum XOR: 15-bit-manipulation/maximum-xor.md
   - DSA (planned):
-      - Bit Manipulation: planned/15-bit-manipulation.md
       - Tries & Advanced: planned/16-tries-advanced.md
 
 extra:

@@ -127,9 +127,14 @@ Embedded from the real, compiled source file via `--8<-- "src/main/java/..."` (n
 3. Never invent APIs; if unsure, verify against the JDK.
 4. When extending, read this file first, then the topic's `index.md` to keep numbering and style.
 
-## 8. Next-batch prompt (copy-paste)
+## 8. Current status
 
-> Using `MASTER_PROMPT.md`, implement the next 🚧 planned problems of topic **<NN Topic>** in
-> `docs/roadmap.md`, Easy → Expert. For each: Java class with all approaches + JUnit tests + doc page
+All 17 topics (00–16) are implemented to this template: **156 problems + ~70 Java 8 stream questions**, 160 JUnit
+tests, `mkdocs build --strict` clean. `docs/roadmap.md` lists candidate problems for further batches.
+
+## 9. Next-batch prompt (copy-paste)
+
+> Using `MASTER_PROMPT.md`, add the next batch of problems to topic **<NN Topic>** (see the candidates in
+> `docs/roadmap.md`), Easy → Expert. For each: Java class with all approaches + JUnit tests + doc page
 > per the template, wire into `mkdocs.yml` and the topic index, mark ✅ in the roadmap, then run
 > `mvn test` and `mkdocs build --strict` and commit.

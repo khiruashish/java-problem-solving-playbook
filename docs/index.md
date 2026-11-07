@@ -19,7 +19,17 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
 ## Pick a track
 
+**156 problems + ~70 Java 8 questions across 17 topics**, every approach compiled and verified by **160 JUnit tests** (most of them cross-check against a brute force on hundreds of random inputs).
+
 <div class="grid cards" markdown>
+
+-   :material-school:{ .lg .middle } **00 · Foundations**
+
+    ---
+
+    UMPIRE problem-solving framework, Big-O, recursion mental model, Java toolbox.
+
+    [:octicons-arrow-right-24: 4 guides](00-foundations/index.md)
 
 -   :material-format-text:{ .lg .middle } **01 · Strings**
 
@@ -41,25 +51,25 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     ---
 
-    FizzBuzz, reverse number with overflow, Armstrong, primes & sieve, GCD/LCM.
+    FizzBuzz, digits & overflow, primes & sieve, GCD/LCM, base conversion, patterns.
 
-    [:octicons-arrow-right-24: 5 problems](03-logical/index.md)
+    [:octicons-arrow-right-24: 10 problems](03-logical/index.md)
 
 -   :material-source-branch:{ .lg .middle } **04 · Recursion & Backtracking**
 
     ---
 
-    Factorial → Fibonacci memo → fast power → Hanoi → subsets → N-Queens.
+    Factorial → Fibonacci memo → Hanoi → subsets → combination sum → N-Queens → Sudoku.
 
-    [:octicons-arrow-right-24: 7 problems](04-recursion/index.md)
+    [:octicons-arrow-right-24: 13 problems](04-recursion/index.md)
 
 -   :material-language-java:{ .lg .middle } **05 · Java 8+ Streams**
 
     ---
 
-    ~50 interview questions: numbers, strings and the classic Employee dataset round.
+    Numbers, strings, the Employee round, Optional, custom collectors, parallel pitfalls.
 
-    [:octicons-arrow-right-24: 3 question banks](05-java8/index.md)
+    [:octicons-arrow-right-24: ~70 questions](05-java8/index.md)
 
 -   :material-link-variant:{ .lg .middle } **06 · Linked List**
 
@@ -81,17 +91,73 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     ---
 
-    Prefix sum + map, longest consecutive, top K (heap & bucket sort), meet in the middle, HashMap from scratch.
+    Prefix sum + map, longest consecutive, top K, meet in the middle, HashMap from scratch.
 
     [:octicons-arrow-right-24: 8 problems](08-hashing/index.md)
 
--   :material-graph:{ .lg .middle } **09–16 · Data Structures & Algorithms**
+-   :material-sort-ascending:{ .lg .middle } **09 · Searching & Sorting**
 
     ---
 
-    Sorting & searching, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
+    Binary search templates, all classic sorts, Quickselect, median of two arrays, search on answer.
 
-    [:octicons-arrow-right-24: Roadmap](roadmap.md)
+    [:octicons-arrow-right-24: 11 problems](09-searching-sorting/index.md)
+
+-   :material-file-tree:{ .lg .middle } **10 · Trees & BST**
+
+    ---
+
+    Traversals incl. Morris, views, LCA, validate BST, build & serialize, max path sum.
+
+    [:octicons-arrow-right-24: 11 problems](10-trees/index.md)
+
+-   :material-triangle-outline:{ .lg .middle } **11 · Heap**
+
+    ---
+
+    Top-K patterns, merge K arrays, task scheduler, two-heap median, heap from scratch.
+
+    [:octicons-arrow-right-24: 7 problems](11-heap/index.md)
+
+-   :material-graph:{ .lg .middle } **12 · Graphs**
+
+    ---
+
+    BFS/DFS, islands, topological sort, Dijkstra, Union-Find, MST, Bellman-Ford, Floyd-Warshall.
+
+    [:octicons-arrow-right-24: 11 problems](12-graphs/index.md)
+
+-   :material-table-large:{ .lg .middle } **13 · Dynamic Programming**
+
+    ---
+
+    Recursion → memo → table → O(1): knapsack, LIS, LCS, edit distance, interval DP.
+
+    [:octicons-arrow-right-24: 12 problems](13-dynamic-programming/index.md)
+
+-   :material-lightning-bolt:{ .lg .middle } **14 · Greedy**
+
+    ---
+
+    Activity selection, jump game, gas station, platforms, Huffman — each proven vs brute force.
+
+    [:octicons-arrow-right-24: 7 problems](14-greedy/index.md)
+
+-   :material-chip:{ .lg .middle } **15 · Bit Manipulation**
+
+    ---
+
+    Masks, Kernighan, single number I/II/III, XOR tricks, bitmask subsets, max-XOR trie.
+
+    [:octicons-arrow-right-24: 7 problems](15-bit-manipulation/index.md)
+
+-   :material-family-tree:{ .lg .middle } **16 · Tries & Advanced**
+
+    ---
+
+    Trie, word search II, autocomplete, segment tree, Fenwick tree, LFU cache.
+
+    [:octicons-arrow-right-24: 7 problems](16-tries-advanced/index.md)
 
 </div>
 

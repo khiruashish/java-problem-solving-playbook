@@ -4,13 +4,15 @@
 
 ## Problem
 Shortest distance from `src` to every node in a directed graph with **non-negative** weights. Unreachable nodes report ∞.
-```
-0 →(4) 1 →(1) 3
- \      ↑
- (1)   (2)            dist from 0: [0, 3, 1, 4]
-   ↘    |             (0→2→1 costs 3, cheaper than 0→1 at 4)
-     2 ─┘ →(5) 3
-```
+| Edge | Weight |
+|------|--------|
+| 0 → 1 | 4 |
+| 0 → 2 | 1 |
+| 2 → 1 | 2 |
+| 1 → 3 | 1 |
+| 2 → 3 | 5 |
+
+Distances from 0: **[0, 3, 1, 4]**. The cheapest way to 1 is 0 → 2 → 1 (cost 3), not the direct edge (cost 4).
 
 ## Thinking process
 <div class="steps" markdown>

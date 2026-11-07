@@ -216,8 +216,24 @@ nav:
       - Expert:
           - Median of two sorted arrays: 09-searching-sorting/median-two-sorted-arrays.md
           - Split array largest sum: 09-searching-sorting/split-array-largest-sum.md
+  - Trees & BST:
+      - 10-trees/index.md
+      - Easy:
+          - Traversals: 10-trees/traversals.md
+          - Height & balance: 10-trees/tree-height.md
+          - Level order: 10-trees/level-order.md
+      - Medium:
+          - Diameter: 10-trees/diameter.md
+          - Validate BST: 10-trees/validate-bst.md
+          - Lowest common ancestor: 10-trees/lowest-common-ancestor.md
+          - Tree views: 10-trees/tree-views.md
+      - Hard:
+          - Build from traversals: 10-trees/build-tree.md
+          - Zig-zag level order: 10-trees/zigzag-level-order.md
+      - Expert:
+          - Serialize & deserialize: 10-trees/serialize-tree.md
+          - Max path sum: 10-trees/max-path-sum.md
   - DSA (planned):
-      - Trees & BST: planned/10-trees.md
       - Heap: planned/11-heap.md
       - Graphs: planned/12-graphs.md
       - Dynamic Programming: planned/13-dynamic-programming.md

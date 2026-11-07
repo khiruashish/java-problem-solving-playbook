@@ -169,8 +169,23 @@ nav:
       - Expert:
           - LRU cache: 06-linked-list/lru-cache.md
           - Merge K sorted lists: 06-linked-list/merge-k-sorted-lists.md
+  - Stack & Queue:
+      - 07-stack-queue/index.md
+      - Easy:
+          - Stack with an array: 07-stack-queue/array-stack.md
+          - Queue using stacks: 07-stack-queue/queue-using-stacks.md
+      - Medium:
+          - Min stack: 07-stack-queue/min-stack.md
+          - Next greater element: 07-stack-queue/next-greater-element.md
+          - Evaluate RPN: 07-stack-queue/evaluate-rpn.md
+          - Daily temperatures: 07-stack-queue/daily-temperatures.md
+      - Hard:
+          - Infix to postfix: 07-stack-queue/infix-to-postfix.md
+          - Sliding window maximum: 07-stack-queue/sliding-window-maximum.md
+      - Expert:
+          - Largest rectangle in histogram: 07-stack-queue/largest-rectangle-histogram.md
+          - Basic calculator: 07-stack-queue/basic-calculator.md
   - DSA (planned):
-      - Stack & Queue: planned/07-stack-queue.md
       - Hashing: planned/08-hashing.md
       - Searching & Sorting: planned/09-searching-sorting.md
       - Trees & BST: planned/10-trees.md

@@ -69,11 +69,19 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     [:octicons-arrow-right-24: 12 problems](06-linked-list/index.md)
 
--   :material-graph:{ .lg .middle } **07–16 · Data Structures & Algorithms**
+-   :material-layers-triple:{ .lg .middle } **07 · Stack & Queue**
 
     ---
 
-    Stack, hashing, sorting, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
+    Monotonic stack & deque, min stack, RPN, shunting-yard, histogram, a full calculator.
+
+    [:octicons-arrow-right-24: 10 problems](07-stack-queue/index.md)
+
+-   :material-graph:{ .lg .middle } **08–16 · Data Structures & Algorithms**
+
+    ---
+
+    Hashing, sorting, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
 
     [:octicons-arrow-right-24: Roadmap](roadmap.md)
 

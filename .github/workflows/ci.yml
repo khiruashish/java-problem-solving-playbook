@@ -3,9 +3,14 @@ name: build-test-docs
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   test-and-docs:
@@ -25,6 +30,11 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Build docs (strict — broken links/snippets fail the build)
         run: mkdocs build --strict
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      - name: Configure git identity for gh-deploy
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: mkdocs gh-deploy --force

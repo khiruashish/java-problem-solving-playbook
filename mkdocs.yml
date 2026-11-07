@@ -185,8 +185,21 @@ nav:
       - Expert:
           - Largest rectangle in histogram: 07-stack-queue/largest-rectangle-histogram.md
           - Basic calculator: 07-stack-queue/basic-calculator.md
+  - Hashing:
+      - 08-hashing/index.md
+      - Easy:
+          - Contains duplicate: 08-hashing/contains-duplicate.md
+          - Intersection of two arrays: 08-hashing/array-intersection.md
+      - Medium:
+          - Subarray sum equals K: 08-hashing/subarray-sum-equals-k.md
+          - Longest consecutive sequence: 08-hashing/longest-consecutive-sequence.md
+          - Top K frequent: 08-hashing/top-k-frequent.md
+      - Hard:
+          - Longest zero-sum subarray: 08-hashing/longest-zero-sum-subarray.md
+          - 4Sum II: 08-hashing/four-sum-count.md
+      - Expert:
+          - HashMap from scratch: 08-hashing/my-hash-map.md
   - DSA (planned):
-      - Hashing: planned/08-hashing.md
       - Searching & Sorting: planned/09-searching-sorting.md
       - Trees & BST: planned/10-trees.md
       - Heap: planned/11-heap.md

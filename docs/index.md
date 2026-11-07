@@ -77,11 +77,19 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     [:octicons-arrow-right-24: 10 problems](07-stack-queue/index.md)
 
--   :material-graph:{ .lg .middle } **08–16 · Data Structures & Algorithms**
+-   :material-pound:{ .lg .middle } **08 · Hashing**
 
     ---
 
-    Hashing, sorting, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
+    Prefix sum + map, longest consecutive, top K (heap & bucket sort), meet in the middle, HashMap from scratch.
+
+    [:octicons-arrow-right-24: 8 problems](08-hashing/index.md)
+
+-   :material-graph:{ .lg .middle } **09–16 · Data Structures & Algorithms**
+
+    ---
+
+    Sorting & searching, trees, heaps, graphs, DP, greedy, bits, tries. Planned in order.
 
     [:octicons-arrow-right-24: Roadmap](roadmap.md)
 

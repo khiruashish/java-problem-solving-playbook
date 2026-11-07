@@ -45,7 +45,8 @@ src/test/java/com/playbook/<topic>/   JUnit 5 tests verifying every approach
 | Java 8 Streams | ~50 questions ✅ |
 | Linked List | 12 ✅ |
 | Stack & Queue | 10 ✅ |
-| Hashing … Tries (08–16) | 🚧 planned, see `docs/roadmap.md` |
+| Hashing | 8 ✅ |
+| Searching & Sorting … Tries (09–16) | 🚧 planned, see `docs/roadmap.md` |
 
 ## Extending
 

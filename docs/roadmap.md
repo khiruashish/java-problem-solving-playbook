@@ -13,7 +13,7 @@
 | 05 | [Java 8+ Streams](05-java8/index.md) | ✅ | ~50 questions in 3 banks. 🚧 next: Optional deep-dive, custom Collector, parallel-stream pitfalls |
 | 06 | [Linked List](06-linked-list/index.md) | ✅ | 12 (Easy → Expert), including LRU cache and merge K lists |
 | 07 | [Stack & Queue](07-stack-queue/index.md) | ✅ | 10 (Easy → Expert), including monotonic stack/deque, shunting-yard and calculator |
-| 08 | [Hashing](planned/08-hashing.md) | 🚧 | |
+| 08 | [Hashing](08-hashing/index.md) | ✅ | 8 (Easy → Expert), including prefix-sum + map and a HashMap from scratch |
 | 09 | [Searching & Sorting](planned/09-searching-sorting.md) | 🚧 | |
 | 10 | [Trees & BST](planned/10-trees.md) | 🚧 | |
 | 11 | [Heap / Priority Queue](planned/11-heap.md) | 🚧 | |

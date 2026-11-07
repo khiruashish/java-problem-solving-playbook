@@ -281,8 +281,20 @@ nav:
           - Word break: 13-dynamic-programming/word-break.md
           - Matrix chain multiplication: 13-dynamic-programming/matrix-chain-multiplication.md
           - Burst balloons: 13-dynamic-programming/burst-balloons.md
+  - Greedy:
+      - 14-greedy/index.md
+      - Easy:
+          - Assign cookies: 14-greedy/assign-cookies.md
+      - Medium:
+          - Activity selection: 14-greedy/activity-selection.md
+          - Jump game: 14-greedy/jump-game.md
+          - Gas station: 14-greedy/gas-station.md
+      - Hard:
+          - Minimum platforms: 14-greedy/minimum-platforms.md
+          - Fractional knapsack: 14-greedy/fractional-knapsack.md
+      - Expert:
+          - Huffman coding: 14-greedy/huffman-coding.md
   - DSA (planned):
-      - Greedy: planned/14-greedy.md
       - Bit Manipulation: planned/15-bit-manipulation.md
       - Tries & Advanced: planned/16-tries-advanced.md
 

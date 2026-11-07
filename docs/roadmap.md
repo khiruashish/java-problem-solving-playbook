@@ -19,6 +19,6 @@
 | 11 | [Heap](11-heap/index.md) | ✅ | 7 (Easy → Expert), top-k patterns, two-heap median and a heap from scratch with heapsort |
 | 12 | [Graphs](12-graphs/index.md) | ✅ | 11 (Easy → Expert), BFS/DFS to Dijkstra, Union-Find, MST, Bellman-Ford and Floyd-Warshall |
 | 13 | [Dynamic Programming](13-dynamic-programming/index.md) | ✅ | 12 (Easy → Expert), each as recursion → memo → table → space-optimised, up to interval DP |
-| 14 | [Greedy](planned/14-greedy.md) | 🚧 | |
+| 14 | [Greedy](14-greedy/index.md) | ✅ | 7 (Easy → Expert), each greedy proven against brute force or DP |
 | 15 | [Bit Manipulation](planned/15-bit-manipulation.md) | 🚧 | |
 | 16 | [Tries & Advanced](planned/16-tries-advanced.md) | 🚧 | |

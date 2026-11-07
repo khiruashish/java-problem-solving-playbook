@@ -9,7 +9,7 @@ weights `[10,20,30]`, values `[60,100,120]`, capacity 50 → **220** (items 2 an
 ## Thinking process
 <div class="steps" markdown>
 
-1. **Greedy by value/weight ratio fails** for 0/1 (it works for the *fractional* knapsack in the [Greedy](../planned/14-greedy.md) topic).
+1. **Greedy by value/weight ratio fails** for 0/1 (it works for the *fractional* knapsack in the [Greedy](../14-greedy/index.md) topic).
 2. **Decision per item**: **skip** it, giving `f(i−1, w)`, or **take** it if it fits, giving `val[i] + f(i−1, w − wt[i])`.
 3. **State** = (item index, remaining capacity), so there are n × W states with O(1) work each: **O(n·W)**.
    That's pseudo-polynomial, since it depends on the *value* of W.

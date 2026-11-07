@@ -33,4 +33,4 @@
 | 7 | [Maximum XOR of two numbers](maximum-xor.md) | <span class="badge expert">Expert</span> | Bitwise trie / prefix greedy |
 
 Also bit-based elsewhere: [Missing number (XOR)](../02-arrays/missing-number.md) · [Subsets](../04-recursion/subsets.md) ·
-[N-Queens bitmask count](../04-recursion/n-queens.md) · [Fenwick tree (`i & -i`)](../planned/16-tries-advanced.md).
+[N-Queens bitmask count](../04-recursion/n-queens.md) · [Fenwick tree (`i & -i`)](../16-tries-advanced/index.md).

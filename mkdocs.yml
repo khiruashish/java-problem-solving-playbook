@@ -307,8 +307,18 @@ nav:
           - Bitmask subsets: 15-bit-manipulation/bitmask-subsets.md
       - Expert:
           - Maximum XOR: 15-bit-manipulation/maximum-xor.md
-  - DSA (planned):
-      - Tries & Advanced: planned/16-tries-advanced.md
+  - Tries & Advanced:
+      - 16-tries-advanced/index.md
+      - Medium:
+          - Trie: 16-tries-advanced/trie.md
+          - LCP via trie: 16-tries-advanced/trie-longest-common-prefix.md
+      - Hard:
+          - Word search II: 16-tries-advanced/word-search-ii.md
+          - Autocomplete: 16-tries-advanced/autocomplete.md
+      - Expert:
+          - Segment tree: 16-tries-advanced/segment-tree.md
+          - Fenwick tree: 16-tries-advanced/fenwick-tree.md
+          - LFU cache: 16-tries-advanced/lfu-cache.md
 
 extra:
   social:

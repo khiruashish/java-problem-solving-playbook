@@ -39,4 +39,4 @@ O(n log n) time, O(n) space. Return a `long`, since n = 100,000 reversed gives a
 
 ## Related
 Count of smaller numbers after self (the same merge, tracking original indexes) · Reverse pairs (`a[i] > 2·a[j]`) · A
-Fenwick-tree alternative (see [Tries & Advanced](../planned/16-tries-advanced.md)).
+Fenwick-tree alternative (see [Tries & Advanced](../16-tries-advanced/index.md)).

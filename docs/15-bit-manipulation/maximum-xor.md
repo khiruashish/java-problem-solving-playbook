@@ -38,4 +38,4 @@ Brute force O(n²) · trie O(31·n) time and O(31·n) nodes · prefix set O(31·
 
 ## Related
 Maximum XOR with an element from the array, given limits (offline queries plus a trie) · Maximum XOR subarray (a trie over prefix XORs).
-[Tries](../planned/16-tries-advanced.md) are covered in depth in the next topic.
+[Tries](../16-tries-advanced/index.md) are covered in depth in the next topic.

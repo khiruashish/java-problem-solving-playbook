@@ -21,4 +21,4 @@
 | 13 | [Dynamic Programming](13-dynamic-programming/index.md) | ✅ | 12 (Easy → Expert), each as recursion → memo → table → space-optimised, up to interval DP |
 | 14 | [Greedy](14-greedy/index.md) | ✅ | 7 (Easy → Expert), each greedy proven against brute force or DP |
 | 15 | [Bit Manipulation](15-bit-manipulation/index.md) | ✅ | 7 (Easy → Expert), masks and Kernighan to single number III and maximum XOR trie |
-| 16 | [Tries & Advanced](planned/16-tries-advanced.md) | 🚧 | |
+| 16 | [Tries & Advanced](16-tries-advanced/index.md) | ✅ | 7 (Medium → Expert), trie to word search II, segment tree, Fenwick tree and LFU cache |

@@ -29,6 +29,11 @@ Return the largest sum of a non-empty contiguous subarray. `[-2,1,-3,4,-1,2,1,-5
 | 7 | −5 | 1 | 6 |
 | 8 | 4 | 5 | 6 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/kadane.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/arrays/MaxSubarraySum.java"

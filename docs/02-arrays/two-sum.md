@@ -22,6 +22,11 @@ Return the indices of the two numbers that add up to `target` (exactly one solut
 | 0 | 2 | 7 | {} → {2:0} | |
 | 1 | 7 | 2 | found 2 → idx 0 | `[0,1]` ✅ |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/two-sum.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/arrays/TwoSum.java"

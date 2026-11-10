@@ -40,6 +40,11 @@ O(n) time, O(n) space. The first node that `add` rejects is the start.
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/linked-list-cycle.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/linkedlist/LinkedListCycle.java"

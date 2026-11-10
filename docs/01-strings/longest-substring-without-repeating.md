@@ -47,6 +47,11 @@ Each char is added and removed at most once, so O(2n) = O(n).
 | 2 | b | 2 | **2** | b | 2 |
 | 3 | a | 1 | max(2,1) = **2** | ba | 2 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/longest-substring.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/strings/LongestSubstringWithoutRepeating.java"

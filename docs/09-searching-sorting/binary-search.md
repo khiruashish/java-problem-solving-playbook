@@ -28,6 +28,11 @@ Sorted ascending? Duplicates (which index do they want)? See [first & last occur
 | 4 | 6 | 5 | 13 | 13 > 8, go left |
 | 4 | 4 | 4 | 8 | found ✅ |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/binary-search.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/searchsort/BinarySearch.java"

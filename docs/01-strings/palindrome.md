@@ -55,6 +55,11 @@ Use the same two pointers, but skip junk with inner `while` loops and compare wi
 | 1 | 3 | b | b | ✅ |
 | 2 | 2 | stop | | true |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/palindrome.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/strings/Palindrome.java"

@@ -25,6 +25,11 @@ Each coin denomination can be used any number of times.
 |---|---|---|---|---|---|---|---|---|---|---|----|----|
 | dp | 0 | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 3 | 3 | 2 | **3** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/coin-change.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/dp/CoinChange.java"

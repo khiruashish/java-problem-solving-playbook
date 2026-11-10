@@ -46,8 +46,14 @@ theme:
 
 extra_css:
   - assets/css/3d.css
+  - assets/css/trace.css
 extra_javascript:
   - assets/js/tilt.js
+  - assets/js/trace.js
+
+# Generated trace snippets are pulled into pages with --8<--; they are not pages themselves.
+exclude_docs: |
+  snippets/
 
 markdown_extensions:
   - admonition

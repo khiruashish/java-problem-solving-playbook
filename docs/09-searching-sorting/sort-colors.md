@@ -29,6 +29,11 @@ Sort an array containing only 0, 1 and 2, in place, **in one pass**. `[2,0,2,1,1
 | 0 0 2 1 1 2 | 2 | 2 | 4 | 2: swap with high |
 | 0 0 1 1 2 2 | 2 | 2 | 3 | 1 → mid 3, 1 → mid 4 > high, done |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/sort-colors.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/searchsort/SortColors.java"

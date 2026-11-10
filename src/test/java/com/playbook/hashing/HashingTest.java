@@ -154,4 +154,15 @@ class HashingTest {
         assertEquals(499, colliding.remove(new BadKey(499)));
         assertEquals(499, colliding.size());
     }
+
+    @Test void myHashMapIsEmpty() {
+        MyHashMap<String, Integer> m = new MyHashMap<>();
+        assertTrue(m.isEmpty());
+        m.put("k", 1);
+        assertFalse(m.isEmpty());
+        m.remove("k");
+        assertTrue(m.isEmpty());
+        m.put(null, null);                                       // a null key mapped to null still counts
+        assertFalse(m.isEmpty());
+    }
 }

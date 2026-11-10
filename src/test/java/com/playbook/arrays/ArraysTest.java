@@ -164,4 +164,40 @@ class ArraysTest {
             assertEquals(expected[i], TrappingRainWater.monotonicStack(cases[i]));
         }
     }
+
+    @Test void twoSumNoPairAndPointerMoves() {
+        int[] none = {1, 2, 4};
+        assertEquals(0, TwoSum.bruteForce(none, 100).length);
+        assertEquals(0, TwoSum.optimal(none, 100).length);
+        assertEquals(0, TwoSum.sortedTwoPointers(none, 100).length);
+        assertEquals(0, TwoSum.sortThenTwoPointers(none, 100).length);
+        assertEquals(0, TwoSum.sortedTwoPointers(new int[0], 5).length);
+        int[] sorted = {1, 3, 5, 9};                             // 1+9 too big → r--, 1+5 too small → l++, 3+5 = 8
+        assertArrayEquals(new int[]{1, 2}, TwoSum.sortedTwoPointers(sorted, 8));
+        assertArrayEquals(new int[]{1, 2}, TwoSum.bruteForce(sorted, 8));
+        assertArrayEquals(new int[]{0, 3}, TwoSum.sortThenTwoPointers(new int[]{9, 1, 5, 3}, 12)); // original indices
+    }
+
+    @Test void reverseArrayNullSafe() {
+        assertDoesNotThrow(() -> ReverseArray.inPlace(null));
+        assertDoesNotThrow(() -> ReverseArray.recursive(null));
+        assertNull(ReverseArray.streams(null));
+        int[] one = {7};
+        ReverseArray.recursive(one);
+        assertArrayEquals(new int[]{7}, one);
+    }
+
+    @Test void rotateEmptyAndZero() {
+        for (int k : new int[]{0, 3}) {
+            int[] a = {}, b = {}, c = {}, d = {};
+            RotateArray.bruteForce(a, k);
+            RotateArray.extraArray(b, k);
+            RotateArray.reversal(c, k);
+            RotateArray.rotateLeft(d, k);
+            assertEquals(0, a.length + b.length + c.length + d.length);
+        }
+        int[] same = {1, 2, 3};
+        RotateArray.reversal(same, 3);                           // k == n is a full turn
+        assertArrayEquals(new int[]{1, 2, 3}, same);
+    }
 }

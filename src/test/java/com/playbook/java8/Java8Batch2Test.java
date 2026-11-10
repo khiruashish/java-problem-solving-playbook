@@ -63,4 +63,11 @@ class Java8Batch2Test {
         assertTrue(parallel >= sequential && (parallel - 500_500) % 10 == 0);
         assertEquals(-500_500, ParallelStreamPitfalls.nonAssociative(nums, false));
     }
+
+    @Test void requireUserFound() {
+        assertEquals("Asha", OptionalProblems.requireUser(Map.of("42", "Asha"), "42"));
+        IllegalArgumentException e = assertThrows(IllegalArgumentException.class,
+                () -> OptionalProblems.requireUser(Map.of("42", "Asha"), "7"));
+        assertEquals("no user 7", e.getMessage());               // a meaningful message, unlike get()
+    }
 }

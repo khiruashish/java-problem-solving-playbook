@@ -125,4 +125,11 @@ class BitsTest {
             assertEquals(expected, MaximumXor.prefixSet(a));
         }
     }
+
+    @Test void countSetBitsLibraryAgreesWithHandWritten() {
+        for (int x : new int[]{0, 1, 7, 255, -1, Integer.MIN_VALUE, Integer.MAX_VALUE, 0b1010_1010}) {
+            assertEquals(CountSetBits.kernighan(x), CountSetBits.library(x));
+            assertEquals(CountSetBits.shiftLoop(x), CountSetBits.library(x));
+        }
+    }
 }

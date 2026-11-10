@@ -184,4 +184,11 @@ class StackQueueTest {
         assertThrows(IllegalArgumentException.class, () -> BasicCalculator.evaluate("(1+2"));
         assertThrows(IllegalArgumentException.class, () -> BasicCalculator.evaluate("1+"));
     }
+
+    @Test void stackUsingQueueEmpty() {
+        QueueUsingStacks.StackUsingQueue s = new QueueUsingStacks.StackUsingQueue();
+        assertTrue(s.isEmpty());
+        assertThrows(NoSuchElementException.class, s::pop);
+        assertThrows(NoSuchElementException.class, s::top);
+    }
 }

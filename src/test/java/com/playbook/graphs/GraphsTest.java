@@ -177,4 +177,16 @@ class GraphsTest {
             assertEquals(MinimumSpanningTree.kruskal(n, g), MinimumSpanningTree.prim(n, g), Arrays.deepToString(g));
         }
     }
+
+    @Test void unionFindConnected() {
+        UnionFind uf = new UnionFind(5);
+        assertFalse(uf.connected(0, 1));
+        assertTrue(uf.connected(3, 3));                         // every element is connected to itself
+        assertTrue(uf.union(0, 1));
+        assertTrue(uf.union(1, 2));
+        assertTrue(uf.connected(0, 2));                         // transitively, through 1
+        assertFalse(uf.connected(0, 4));
+        assertFalse(uf.union(2, 0));                            // already together → false (cycle signal)
+        assertEquals(3, uf.sets());
+    }
 }

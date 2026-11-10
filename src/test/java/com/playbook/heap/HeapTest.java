@@ -138,4 +138,18 @@ class HeapTest {
             assertArrayEquals(expected, b);
         }
     }
+
+    @Test void binaryHeapEmptyState() {
+        BinaryHeap h = new BinaryHeap();
+        assertTrue(h.isEmpty());
+        assertThrows(NoSuchElementException.class, h::peek);
+        h.push(4);
+        h.push(-2);
+        assertFalse(h.isEmpty());
+        assertEquals(-2, h.peek());
+        h.pop();
+        h.pop();
+        assertTrue(h.isEmpty());
+        assertTrue(BinaryHeap.heapify(new int[0]).isEmpty());
+    }
 }

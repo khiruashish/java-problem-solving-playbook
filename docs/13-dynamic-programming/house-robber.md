@@ -26,6 +26,11 @@ Houses in a row hold money, and you can't rob two **adjacent** houses. Maximise 
 | 3 | 3 | 11 | 7 + 3 = 10 | 11 |
 | 4 | 1 | 11 | 11 + 1 = **12** | 12 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/house-robber.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/dp/HouseRobber.java"

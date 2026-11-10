@@ -31,6 +31,11 @@ For each day, return how many days you wait for a warmer temperature, or 0 if no
 | 6 | 76 | 5 → 1, 2 → 4 | 76 |
 | 7 | 73 | | 76 73 (never resolved → 0) |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/daily-temperatures.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/stackqueue/DailyTemperatures.java"

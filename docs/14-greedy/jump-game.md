@@ -26,6 +26,11 @@
 | 1 | [1, 2] | 1 + 3 = 4 ≥ last |
 | 2 | reached | **2 jumps** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/jump-game.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/greedy/JumpGame.java"

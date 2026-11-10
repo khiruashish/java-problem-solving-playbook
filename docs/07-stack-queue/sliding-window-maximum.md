@@ -33,6 +33,11 @@ Return the maximum of every contiguous window of size k.
 | 6 | 6 | 6 | **6** |
 | 7 | 7 | 7 | **7** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/sliding-window-maximum.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/stackqueue/SlidingWindowMaximum.java"

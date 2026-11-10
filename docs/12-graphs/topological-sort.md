@@ -28,6 +28,11 @@ Edges `5→2, 5→0, 4→0, 4→1, 2→3, 3→1` → one valid order is `4 5 2 3
 | 3 | 3 | 1: 0 → ready |
 | 1 | 1 | done (6 = V ✅) |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/topological-sort.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/graphs/TopologicalSort.java"

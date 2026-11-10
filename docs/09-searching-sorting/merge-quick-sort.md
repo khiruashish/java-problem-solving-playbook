@@ -38,6 +38,11 @@ Implement both O(n log n) divide-and-conquer sorts, and explain when you'd choos
 `i` marks the end of the "< pivot" zone. Scan with `j`, and when `a[j] < pivot`, swap it into the zone. At the end,
 swap the pivot to `i`, which is its final position.
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/quicksort-partition.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/searchsort/MergeQuickSort.java"

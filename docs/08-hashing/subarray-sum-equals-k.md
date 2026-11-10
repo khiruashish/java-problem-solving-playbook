@@ -29,6 +29,11 @@ Negative numbers? (Yes, which rules out a plain sliding window.) Count or list t
 | 1 | 1 | 2 | 0 → 1 | {0:1, 1:1} | 1 |
 | 2 | 1 | 3 | 1 → 1 | {0:1, 1:1, 2:1} | **2** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/subarray-sum-equals-k.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/hashing/SubarraySumEqualsK.java"

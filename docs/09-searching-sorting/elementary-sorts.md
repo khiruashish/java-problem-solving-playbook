@@ -30,6 +30,11 @@ Implement the classic simple sorts, and be able to explain each one's **invarian
 Sort `[(3,a), (1,b), (3,c)]` by number. A **stable** sort gives `(1,b) (3,a) (3,c)`. An unstable one may give
 `(3,c) (3,a)`. Stability matters when you sort by one key after another (for example, by name, then by department).
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/insertion-sort.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/searchsort/ElementarySorts.java"

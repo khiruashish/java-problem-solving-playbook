@@ -35,6 +35,11 @@ Reading it: `lps[4] = 2` because `"AABAA"` both starts and ends with `"AA"`.
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/kmp.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/strings/KmpPatternSearch.java"

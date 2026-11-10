@@ -28,6 +28,11 @@ Return the node values in pre-order (root, left, right), in-order (left, root, r
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/inorder-iterative.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/trees/Traversals.java"

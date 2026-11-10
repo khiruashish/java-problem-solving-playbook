@@ -27,6 +27,11 @@ Move n disks from peg A to peg C using B as a helper. Move one disk at a time, a
 Move number `m` (1-based) moves disk `trailingZeros(m) + 1`, from peg `(m & (m−1)) % 3` to peg `((m | (m−1)) + 1) % 3`.
 The peg labels are A,B,C when n is odd and A,C,B when n is even.
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/tower-of-hanoi.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/recursion/TowerOfHanoi.java"

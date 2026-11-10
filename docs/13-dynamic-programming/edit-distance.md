@@ -31,6 +31,11 @@ The minimum number of single-character **inserts, deletes and replacements** to 
 | s | 4 | 3 | 3 | 2 |
 | e | 5 | 4 | 4 | **3** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/edit-distance.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/dp/EditDistance.java"

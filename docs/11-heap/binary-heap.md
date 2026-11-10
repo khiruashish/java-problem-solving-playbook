@@ -33,6 +33,11 @@ and no pointers.
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/binary-heap.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/heap/BinaryHeap.java"

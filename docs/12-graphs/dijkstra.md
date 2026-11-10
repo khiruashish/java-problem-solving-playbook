@@ -37,6 +37,11 @@ Distances from 0: **[0, 3, 1, 4]**. The cheapest way to 1 is 0 → 2 → 1 (cost
 | (4, 1) stale → skip | | |
 | (4, 3) | | final |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/dijkstra.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/graphs/Dijkstra.java"

@@ -27,6 +27,11 @@ Return all 2ⁿ subsets of distinct integers. `[1,2,3]` → `[], [1], [2], [3], 
              [] [3] …                (8 leaves)
 ```
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/subsets.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/recursion/Subsets.java"

@@ -35,6 +35,11 @@ h: 0 1 0 2 1 0 1 3 2 1 2 1      (≈ = water, total 6)
 | 3 | 10 | 2 | 2 | right | R = 2 | 0 |
 | … | … | | | | | total **6** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/trapping-rain-water.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/arrays/TrappingRainWater.java"

@@ -33,6 +33,11 @@ Repeatedly remove `"()"`, `"[]"` and `"{}"` until nothing changes. Valid if the 
 ## Approach 3 — Single bracket type
 With only `(` and `)`, a counter is enough: it must never go negative and must end at 0. That's O(1) space.
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/valid-parentheses.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/strings/ValidParentheses.java"

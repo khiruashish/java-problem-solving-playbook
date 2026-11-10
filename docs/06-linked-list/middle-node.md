@@ -26,6 +26,11 @@ For an even length, which middle? Merge sort's split needs the **first** middle,
 | 2 | 3 | 5 |
 | 3 | **4** | null → stop |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/middle-node.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/linkedlist/MiddleNode.java"

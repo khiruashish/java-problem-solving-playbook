@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 from traces import TRACES  # noqa: E402
+import traces_more  # noqa: E402,F401  (registers the second batch)
 
 OUT = os.path.normpath(os.path.join(HERE, "..", "..", "docs", "snippets", "traces"))
 os.makedirs(OUT, exist_ok=True)

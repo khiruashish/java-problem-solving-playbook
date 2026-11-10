@@ -25,6 +25,11 @@
 p=2 marks 4,6,8…   p=3 marks 9,15,21,27   p=5 marks 25   (7² > 30 → stop)
 ```
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/sieve.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/logical/PrimeNumbers.java"

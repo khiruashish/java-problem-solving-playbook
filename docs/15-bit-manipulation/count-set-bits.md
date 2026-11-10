@@ -24,6 +24,11 @@ in O(n) (LeetCode 338).
 | 101000 | 100111 | 100000 | 2 |
 | 100000 | 011111 | 000000 | 3 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/count-set-bits.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/bits/CountSetBits.java"

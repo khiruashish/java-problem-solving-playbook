@@ -22,6 +22,11 @@ Move all `0`s to the end **in place**, keeping the order of the non-zero element
 | 3 | 1 3 **0** 0 12 | 2 |
 | 4 | 1 3 12 0 0 | 3 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/move-zeros.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/arrays/MoveZeros.java"

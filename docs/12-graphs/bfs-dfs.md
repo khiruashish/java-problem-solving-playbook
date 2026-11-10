@@ -26,6 +26,11 @@ fewest-edges distance to every node and count the connected components.
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/bfs.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/graphs/BfsDfs.java"

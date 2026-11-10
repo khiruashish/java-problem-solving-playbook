@@ -23,6 +23,11 @@ Return the values grouped by level, left to right. `[3,9,20,null,null,15,7]` →
 | 2 | 9, 20 | 2 | [9, 20] |
 | 3 | 15, 7 | 2 | [15, 7] |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/level-order.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/trees/LevelOrder.java"

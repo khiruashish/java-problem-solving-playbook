@@ -24,6 +24,11 @@
 | 2 | 5 | 1 | 4 | 4 |
 | 4 | 6 | 1 | **5** | **5** |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/buy-sell-stock.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/arrays/BuySellStock.java"

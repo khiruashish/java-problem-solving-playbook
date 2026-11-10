@@ -14,6 +14,11 @@
  *   stack  { items: [...bottom→top], marks: {index: cls} }
  *   map    { entries: [[key, value]...], marks: {key: cls} }
  *   vars   { items: [[name, value]...] }
+ *   queue  { items: [...front→back], marks: {index: cls} }
+ *   graph  { marks: {id: cls}, edges: {"u-v": cls}, labels: {id: text}, values: {id: text}, hide: [id], ptrs: {name: id} }
+ *          (trees, heaps and tries use graph too; layout carries node x/y, edges [u, v, weight?] and `directed`)
+ * Arrays can render as bars (layout `bars: <rem per unit>`) with state `water: {index: units}`.
+ * Any component with `inline: true` sits beside its neighbours instead of taking a full row.
  * Mark classes: hl ok bad swap dim win done best.
  */
 (function () {
@@ -39,9 +44,9 @@
     Array.prototype.slice.call(node.classList).forEach(function (c) { if (c.indexOf("m-") === 0) node.classList.remove(c); });
     if (cls) cls.split(" ").forEach(function (c) { if (c) node.classList.add("m-" + c); });
   }
-  function labelled(kind, label) {
-    var box = el("div", "pb-tr-comp pb-tr-" + kind);
-    if (label) box.appendChild(el("div", "pb-tr-label", label));
+  function labelled(kind, c) {
+    var box = el("div", "pb-tr-comp pb-tr-" + kind + (c.inline ? " is-inline" : ""));
+    if (c.label) box.appendChild(el("div", "pb-tr-label", c.label));
     return box;
   }
 
@@ -56,18 +61,36 @@
 
   // ------------------------------------------------------------------ array
   function buildArray(c, host, colour) {
-    var box = labelled("array", c.label);
+    var box = labelled("array", c);
     var scroller = el("div", "pb-tr-scroll");
     var track = el("div", "pb-tr-track");
     var cells = el("div", "pb-tr-cells");
     var ptrs = el("div", "pb-tr-ptrs");
+    var unit = c.bars || 0;                         // bars: value × unit rem tall (e.g. heights, sort input)
+    if (unit) {
+      cells.classList.add("is-bars");
+      track.classList.add("is-bars");               // narrower columns (and pointers follow via --tr-cw)
+      cells.style.setProperty("--tr-bars-h", (Math.max.apply(null, c.values.concat([c.maxBar || 0])) * unit + 0.2) + "rem");
+    }
     var cellEls = c.values.map(function (v, i) {
-      var cell = el("div", "pb-tr-cell");
+      var cell = el("div", "pb-tr-cell" + (unit ? " is-bar" : ""));
+      if (unit) {
+        var col = el("div", "pb-tr-barcol");
+        col.appendChild(el("div", "pb-tr-water"));
+        col.appendChild(el("div", "pb-tr-bar"));
+        cell.appendChild(col);
+      }
       cell.appendChild(el("span", "pb-tr-val", String(v)));
       if (c.indexes !== false) cell.appendChild(el("span", "pb-tr-idx", String(i)));
       cells.appendChild(cell);
       return cell;
     });
+    function setBar(cell, v, water) {
+      if (!unit) return;
+      var col = cell.firstChild;
+      col.lastChild.style.height = (Number(v) || 0) * unit + "rem";
+      col.firstChild.style.height = (water || 0) * unit + "rem";
+    }
     track.appendChild(cells);
     track.appendChild(ptrs);
     scroller.appendChild(track);
@@ -75,7 +98,11 @@
     host.appendChild(box);
     var ptrEls = {};
     return function update(s) {
-      if (s.values) s.values.forEach(function (v, i) { cellEls[i].firstChild.textContent = String(v); });
+      var vals = s.values || c.values;
+      cellEls.forEach(function (cell, i) {
+        cell.querySelector(".pb-tr-val").textContent = String(vals[i]);
+        setBar(cell, vals[i], s.water && s.water[i]);
+      });
       cellEls.forEach(function (cell, i) {
         var m = (s.marks && s.marks[i]) || "";
         if (s.win && i >= s.win[0] && i <= s.win[1]) m = (m + " win").trim();
@@ -104,7 +131,7 @@
 
   // ------------------------------------------------------------------- grid
   function buildGrid(c, host) {
-    var box = labelled("grid", c.label);
+    var box = labelled("grid", c);
     var scroller = el("div", "pb-tr-scroll");
     var table = el("table", "pb-tr-table");
     var cellEls = [];
@@ -141,7 +168,7 @@
   // ------------------------------------------------------------------- list
   var NW = 46, NH = 34, STEP = 82, X0 = 18, Y0 = 26;
   function buildList(c, host, colour) {
-    var box = labelled("list", c.label);
+    var box = labelled("list", c);
     var scroller = el("div", "pb-tr-scroll");
     var n = c.nodes.length;
     var width = X0 * 2 + (n - 1) * STEP + NW + 40;
@@ -208,7 +235,7 @@
 
   // ------------------------------------------------------------------ stack
   function buildStack(c, host) {
-    var box = labelled("stack", c.label);
+    var box = labelled("stack", c);
     var col = el("div", "pb-tr-stackcol");
     box.appendChild(col);
     host.appendChild(box);
@@ -230,7 +257,7 @@
 
   // -------------------------------------------------------------------- map
   function buildMap(c, host) {
-    var box = labelled("map", c.label);
+    var box = labelled("map", c);
     var table = el("table", "pb-tr-map");
     box.appendChild(table);
     host.appendChild(box);
@@ -254,7 +281,7 @@
 
   // ------------------------------------------------------------------- vars
   function buildVars(c, host) {
-    var box = labelled("vars", c.label);
+    var box = labelled("vars", c);
     var row = el("div", "pb-tr-varrow");
     box.appendChild(row);
     host.appendChild(box);
@@ -273,7 +300,122 @@
     };
   }
 
-  var BUILD = { array: buildArray, grid: buildGrid, list: buildList, stack: buildStack, map: buildMap, vars: buildVars };
+  // ------------------------------------------------------------------ queue (front on the left)
+  function buildQueue(c, host) {
+    var box = labelled("queue", c);
+    var row = el("div", "pb-tr-queuerow");
+    box.appendChild(row);
+    host.appendChild(box);
+    return function update(s) {
+      var items = s.items || [];
+      row.textContent = "";
+      if (!items.length) row.appendChild(el("div", "pb-tr-empty", "empty"));
+      items.forEach(function (v, i) {
+        var it = el("div", "pb-tr-qitem", String(v));
+        setMark(it, (s.marks && s.marks[i]) || "");
+        if (i === 0) it.classList.add("is-front");
+        row.appendChild(it);
+      });
+    };
+  }
+
+  // ------------------------------------------------------------------ graph / tree (SVG)
+  // c.nodes: [{id, label, x, y}] in layout units; c.edges: [[u, v, weight?]]; c.directed.
+  // state: marks {id: cls}, edges {"u-v": cls}, labels {id: text}, values {id: text}, hide [ids], ptrs {name: id}
+  var GU = 62, GR = 19, GPAD = 34;
+  function buildGraph(c, host, colour) {
+    var box = labelled("graph", c);
+    var scroller = el("div", "pb-tr-scroll");
+    var maxX = 0, maxY = 0, pos = {};
+    c.nodes.forEach(function (n) {
+      pos[n.id] = { x: GPAD + n.x * GU, y: GPAD + n.y * GU };
+      maxX = Math.max(maxX, n.x);
+      maxY = Math.max(maxY, n.y);
+    });
+    var width = GPAD * 2 + maxX * GU + 60, height = GPAD * 2 + maxY * GU + 46;
+    var root = svg("svg", { viewBox: "0 0 " + width + " " + height, width: width, height: height, class: "pb-tr-svg pb-tr-gsvg" });
+    var uid = "g" + Math.random().toString(36).slice(2, 8);
+    var defs = svg("defs");
+    var marker = svg("marker", { id: uid, viewBox: "0 0 10 10", refX: "9", refY: "5", markerWidth: "7", markerHeight: "7", orient: "auto-start-reverse" });
+    marker.appendChild(svg("path", { d: "M0 0 L10 5 L0 10 z", class: "pb-tr-arrowhead" }));
+    defs.appendChild(marker);
+    root.appendChild(defs);
+    var edgeLayer = svg("g", { class: "pb-tr-edges" }), nodeLayer = svg("g"), ptrLayer = svg("g", { class: "pb-tr-ptrlayer" });
+    root.appendChild(edgeLayer);
+    root.appendChild(nodeLayer);
+    root.appendChild(ptrLayer);
+    var edgeEls = {};
+    c.edges.forEach(function (e) {
+      var a = pos[e[0]], b = pos[e[1]];
+      var dx = b.x - a.x, dy = b.y - a.y, len = Math.sqrt(dx * dx + dy * dy) || 1;
+      var ux = dx / len, uy = dy / len;
+      var g = svg("g", { class: "pb-tr-edge" });
+      var line = svg("line", { x1: a.x + ux * GR, y1: a.y + uy * GR, x2: b.x - ux * (GR + 3), y2: b.y - uy * (GR + 3) });
+      if (c.directed) line.setAttribute("marker-end", "url(#" + uid + ")");
+      g.appendChild(line);
+      if (e.length > 2 && e[2] !== null) {
+        var mx = (a.x + b.x) / 2 - uy * 11, my = (a.y + b.y) / 2 + ux * 11;
+        var w = svg("text", { x: mx, y: my + 4, "text-anchor": "middle", class: "pb-tr-weight" });
+        w.textContent = String(e[2]);
+        g.appendChild(w);
+      }
+      edgeLayer.appendChild(g);
+      edgeEls[e[0] + "-" + e[1]] = g;
+    });
+    var nodeEls = {};
+    c.nodes.forEach(function (n) {
+      var p = pos[n.id];
+      var g = svg("g", { class: "pb-tr-node pb-tr-gnode" });
+      g.appendChild(svg("circle", { cx: p.x, cy: p.y, r: GR }));
+      var t = svg("text", { x: p.x, y: p.y + 5, "text-anchor": "middle" });
+      t.textContent = String(n.label);
+      g.appendChild(t);
+      var badge = svg("text", { x: p.x + GR + 5, y: p.y - GR + 6, class: "pb-tr-badge" });
+      g.appendChild(badge);
+      nodeLayer.appendChild(g);
+      nodeEls[n.id] = { g: g, t: t, badge: badge, label: String(n.label) };
+    });
+    scroller.appendChild(root);
+    box.appendChild(scroller);
+    host.appendChild(box);
+    var ptrEls = {};
+    return function update(s) {
+      var hidden = {};
+      (s.hide || []).forEach(function (id) { hidden[id] = true; });
+      Object.keys(nodeEls).forEach(function (id) {
+        var n = nodeEls[id];
+        setMark(n.g, (s.marks && s.marks[id]) || "");
+        n.g.classList.toggle("is-gone", !!hidden[id]);
+        n.t.textContent = s.values && id in s.values ? String(s.values[id]) : n.label;
+        n.badge.textContent = s.labels && id in s.labels ? String(s.labels[id]) : "";
+      });
+      c.edges.forEach(function (e) {
+        var key = e[0] + "-" + e[1], g = edgeEls[key];
+        setMark(g, (s.edges && (s.edges[key] || (!c.directed && s.edges[e[1] + "-" + e[0]]))) || "");
+        g.classList.toggle("is-gone", !!(hidden[e[0]] || hidden[e[1]]));
+      });
+      var rank = {};
+      Object.keys(s.ptrs || {}).forEach(function (name) {
+        var p = ptrEls[name];
+        if (!p) {
+          p = ptrEls[name] = svg("g", { class: "pb-tr-sptr", "data-k": colour(name) });
+          var t = svg("text", { "text-anchor": "middle" });
+          t.textContent = "▲ " + name;
+          p.appendChild(t);
+          ptrLayer.appendChild(p);
+        }
+        var id = s.ptrs[name];
+        if (id === null || id === undefined || !(id in pos)) { p.style.opacity = 0; return; }
+        var r = rank[id] = (rank[id] || 0) + 1;
+        p.style.opacity = 1;
+        p.style.transform = "translate(" + pos[id].x + "px," + (pos[id].y + GR + 15 + (r - 1) * 15) + "px)";
+      });
+      Object.keys(ptrEls).forEach(function (name) { if (!s.ptrs || !(name in s.ptrs)) ptrEls[name].style.opacity = 0; });
+    };
+  }
+
+  var BUILD = { array: buildArray, grid: buildGrid, list: buildList, stack: buildStack, map: buildMap, vars: buildVars,
+                queue: buildQueue, graph: buildGraph };
 
   // ------------------------------------------------------------------- init
   function init(root) {

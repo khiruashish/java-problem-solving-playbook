@@ -28,6 +28,11 @@ Return the length of the longest run of consecutive integers in an **unsorted** 
 | 1 | no | count 1,2,3,4 | **4** |
 | 3, 2 | yes | skip | |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/longest-consecutive-sequence.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/hashing/LongestConsecutiveSequence.java"

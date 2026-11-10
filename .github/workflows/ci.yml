@@ -28,6 +28,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Animated traces are up to date (and every recorded run is correct)
+        run: |
+          python tools/trace/build.py
+          git diff --exit-code -- docs/snippets/traces
       - name: Build docs (strict — broken links/snippets fail the build)
         run: mkdocs build --strict
       - name: Configure git identity for gh-deploy

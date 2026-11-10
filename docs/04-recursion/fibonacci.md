@@ -17,6 +17,11 @@
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/fibonacci-memo.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/recursion/Fibonacci.java"

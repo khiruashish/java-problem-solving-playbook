@@ -31,6 +31,11 @@ For every element, find the first element **to its right** that is strictly grea
 | 1 | 5 | 2 | 25 | 25 5 |
 | 0 | 4 | | 5 | 25 5 4 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/next-greater-element.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/stackqueue/NextGreaterElement.java"

@@ -54,6 +54,11 @@ forward and you get a cycle. O(n) time, O(n) space.
 | 2 | 2 | 3 | null←1←2  3 |
 | 3 | 3 | null | null←1←2←3 → return 3 |
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/reverse-linked-list.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/linkedlist/ReverseLinkedList.java"

@@ -25,6 +25,11 @@ Count the groups of `'1'` cells connected up/down/left/right.
 
 </div>
 
+## Step through it
+Play the trace, or step with ← →. The highlighted line is the code that just ran.
+
+--8<-- "docs/snippets/traces/number-of-islands.html"
+
 ## Code
 ```java
 --8<-- "src/main/java/com/playbook/graphs/NumberOfIslands.java"

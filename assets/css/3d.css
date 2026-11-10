@@ -1,0 +1,119 @@
+/* ==========================================================================
+   3D theme for the Java Problem-Solving Playbook (MkDocs Material)
+   Depth via layered shadows + perspective tilt; works in light & dark.
+   ========================================================================== */
+:root {
+  --pb-accent-1: #6a5cff;
+  --pb-accent-2: #00c2ff;
+  --pb-accent-3: #ff4fd8;
+  --pb-card-bg: #ffffff;
+  --pb-card-border: rgba(106, 92, 255, .18);
+  --pb-shadow: 0 1px 2px rgba(20, 20, 60, .06), 0 6px 14px rgba(20, 20, 60, .08),
+               0 18px 40px rgba(20, 20, 60, .10);
+  --pb-shadow-hover: 0 2px 4px rgba(20, 20, 60, .08), 0 14px 28px rgba(60, 40, 160, .18),
+                     0 32px 64px rgba(60, 40, 160, .20);
+}
+[data-md-color-scheme="slate"] {
+  --pb-card-bg: #1d1f33;
+  --pb-card-border: rgba(140, 130, 255, .25);
+  --pb-shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 18px rgba(0, 0, 0, .35),
+               0 20px 44px rgba(0, 0, 0, .35);
+  --pb-shadow-hover: 0 2px 4px rgba(0, 0, 0, .5), 0 16px 32px rgba(106, 92, 255, .30),
+                     0 34px 70px rgba(0, 194, 255, .18);
+  --md-default-bg-color: #14152a;
+}
+
+/* ---------- Hero ---------- */
+.pb-hero {
+  position: relative;
+  padding: 3rem 2rem;
+  margin: 0 0 2rem;
+  border-radius: 1.25rem;
+  color: #fff;
+  background: linear-gradient(120deg, var(--pb-accent-1), var(--pb-accent-2), var(--pb-accent-3), var(--pb-accent-1));
+  background-size: 300% 300%;
+  animation: pb-gradient 14s ease infinite;
+  box-shadow: var(--pb-shadow-hover);
+  transform: perspective(1200px) rotateX(2deg);
+  overflow: hidden;
+}
+.pb-hero::after {             /* glossy highlight for depth */
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 20% 0%, rgba(255,255,255,.35), transparent 55%);
+  pointer-events: none;
+}
+.pb-hero h1 { color: #fff; margin: 0 0 .5rem; font-weight: 800; letter-spacing: -.02em;
+  text-shadow: 0 2px 0 rgba(0,0,0,.15), 0 8px 24px rgba(0,0,0,.25); }
+.pb-hero p { font-size: 1.05rem; max-width: 46rem; opacity: .95; }
+.pb-hero .md-button { color: #fff; border-color: #fff; margin: .4rem .4rem 0 0; }
+.pb-hero .md-button--primary { background: #fff; color: var(--pb-accent-1); }
+@keyframes pb-gradient { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+/* ---------- 3D cards (Material grid cards + custom .pb-card) ---------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card,
+.pb-card {
+  background: var(--pb-card-bg);
+  border: 1px solid var(--pb-card-border) !important;
+  border-radius: 1rem !important;
+  box-shadow: var(--pb-shadow);
+  transform-style: preserve-3d;
+  transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease;
+  will-change: transform;
+}
+.md-typeset .grid.cards > ul > li:hover,
+.pb-card:hover {
+  box-shadow: var(--pb-shadow-hover);
+  transform: perspective(900px) translateY(-6px) rotateX(4deg) rotateY(-3deg);
+}
+.pb-tilt { transition: transform .12s ease-out, box-shadow .25s ease; }
+
+/* ---------- Difficulty badges (raised 3D pills) ---------- */
+.md-typeset .badge {
+  display: inline-block;
+  padding: .15rem .7rem;
+  margin: 0 .25rem .25rem 0;
+  border-radius: 999px;
+  font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0 2px 0 rgba(0,0,0,.18), 0 6px 14px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.35);
+}
+.md-typeset .badge.easy   { background: linear-gradient(180deg,#34d399,#059669); }
+.md-typeset .badge.medium { background: linear-gradient(180deg,#fbbf24,#d97706); }
+.md-typeset .badge.hard   { background: linear-gradient(180deg,#f87171,#dc2626); }
+.md-typeset .badge.expert { background: linear-gradient(180deg,#c084fc,#7c3aed); }
+.md-typeset .badge.tag    { background: linear-gradient(180deg,#60a5fa,#2563eb); text-transform: none; }
+
+/* ---------- Depth for code, tables, admonitions ---------- */
+.md-typeset pre > code { border-radius: .75rem; }
+.md-typeset .highlight, .md-typeset .admonition, .md-typeset details {
+  border-radius: .8rem; box-shadow: var(--pb-shadow);
+}
+.md-typeset table:not([class]) {
+  border-radius: .8rem; overflow: hidden; box-shadow: var(--pb-shadow); border: none;
+}
+.md-typeset table:not([class]) th {
+  background: linear-gradient(90deg, var(--pb-accent-1), var(--pb-accent-2)); color: #fff;
+}
+
+/* ---------- Step-by-step ladder ---------- */
+.md-typeset ol.steps, .md-typeset .steps ol { counter-reset: step; list-style: none; padding-left: 0; }
+.md-typeset .steps ol > li { counter-increment: step; position: relative; padding-left: 2.6rem; margin-bottom: .8rem; }
+.md-typeset .steps ol > li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: -.1rem;
+  width: 1.8rem; height: 1.8rem; line-height: 1.8rem; text-align: center;
+  border-radius: 50%; color: #fff; font-weight: 800;
+  background: linear-gradient(135deg, var(--pb-accent-1), var(--pb-accent-2));
+  box-shadow: 0 3px 0 rgba(0,0,0,.2), 0 8px 16px rgba(106,92,255,.35);
+}
+
+/* ---------- Header depth ---------- */
+.md-header { box-shadow: 0 6px 24px rgba(40, 20, 120, .25); }
+.md-tabs { background: linear-gradient(90deg, var(--pb-accent-1), var(--pb-accent-2)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .pb-hero { animation: none; transform: none; }
+  .md-typeset .grid.cards > ul > li:hover, .pb-card:hover { transform: none; }
+}

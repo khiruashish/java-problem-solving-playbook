@@ -196,15 +196,18 @@ nav:
               - Reverse a linked list: 06-linked-list/reverse-linked-list.md
               - Middle node: 06-linked-list/middle-node.md
               - Merge two sorted lists: 06-linked-list/merge-two-sorted-lists.md
+              - Remove duplicates (sorted list): 06-linked-list/remove-duplicates-sorted-list.md
           - Medium:
               - Cycle detection & start: 06-linked-list/linked-list-cycle.md
               - Remove Nth from end: 06-linked-list/remove-nth-from-end.md
               - Palindrome list: 06-linked-list/palindrome-linked-list.md
               - Intersection of two lists: 06-linked-list/intersection-of-two-lists.md
+              - Reorder list: 06-linked-list/reorder-list.md
           - Hard:
               - Add two numbers: 06-linked-list/add-two-numbers.md
               - Reverse k-group: 06-linked-list/reverse-k-group.md
               - Copy random list: 06-linked-list/copy-random-list.md
+              - Sort list: 06-linked-list/sort-list.md
           - Expert:
               - LRU cache: 06-linked-list/lru-cache.md
               - Merge K sorted lists: 06-linked-list/merge-k-sorted-lists.md
@@ -213,14 +216,17 @@ nav:
           - Easy:
               - Stack with an array: 07-stack-queue/array-stack.md
               - Queue using stacks: 07-stack-queue/queue-using-stacks.md
+              - Stack using queues: 07-stack-queue/stack-using-queues.md
           - Medium:
               - Min stack: 07-stack-queue/min-stack.md
               - Next greater element: 07-stack-queue/next-greater-element.md
               - Evaluate RPN: 07-stack-queue/evaluate-rpn.md
               - Daily temperatures: 07-stack-queue/daily-temperatures.md
+              - Asteroid collision: 07-stack-queue/asteroid-collision.md
           - Hard:
               - Infix to postfix: 07-stack-queue/infix-to-postfix.md
               - Sliding window maximum: 07-stack-queue/sliding-window-maximum.md
+              - Decode string: 07-stack-queue/decode-string.md
           - Expert:
               - Largest rectangle in histogram: 07-stack-queue/largest-rectangle-histogram.md
               - Basic calculator: 07-stack-queue/basic-calculator.md
@@ -229,13 +235,16 @@ nav:
           - Easy:
               - Contains duplicate: 08-hashing/contains-duplicate.md
               - Intersection of two arrays: 08-hashing/array-intersection.md
+              - Isomorphic strings: 08-hashing/isomorphic-strings.md
           - Medium:
               - Subarray sum equals K: 08-hashing/subarray-sum-equals-k.md
               - Longest consecutive sequence: 08-hashing/longest-consecutive-sequence.md
               - Top K frequent: 08-hashing/top-k-frequent.md
+              - Distinct in every window: 08-hashing/distinct-in-window.md
           - Hard:
               - Longest zero-sum subarray: 08-hashing/longest-zero-sum-subarray.md
               - 4Sum II: 08-hashing/four-sum-count.md
+              - Subarrays divisible by K: 08-hashing/subarrays-divisible-by-k.md
           - Expert:
               - HashMap from scratch: 08-hashing/my-hash-map.md
       - Trees & BST:
@@ -244,14 +253,17 @@ nav:
               - Traversals: 10-trees/traversals.md
               - Height & balance: 10-trees/tree-height.md
               - Level order: 10-trees/level-order.md
+              - Symmetric tree: 10-trees/symmetric-tree.md
           - Medium:
               - Diameter: 10-trees/diameter.md
               - Validate BST: 10-trees/validate-bst.md
               - Lowest common ancestor: 10-trees/lowest-common-ancestor.md
               - Tree views: 10-trees/tree-views.md
+              - BST iterator: 10-trees/bst-iterator.md
           - Hard:
               - Build from traversals: 10-trees/build-tree.md
               - Zig-zag level order: 10-trees/zigzag-level-order.md
+              - Vertical order: 10-trees/vertical-order.md
           - Expert:
               - Serialize & deserialize: 10-trees/serialize-tree.md
               - Max path sum: 10-trees/max-path-sum.md
@@ -259,15 +271,18 @@ nav:
           - 11-heap/index.md
           - Easy:
               - Kth largest: 11-heap/kth-largest.md
+              - Last stone weight: 11-heap/last-stone-weight.md
           - Medium:
               - Top K frequent words: 11-heap/top-k-frequent-words.md
               - K closest points: 11-heap/k-closest-points.md
+              - Reorganize string: 11-heap/reorganize-string.md
           - Hard:
               - Merge K sorted arrays: 11-heap/merge-k-sorted-arrays.md
               - Task scheduler: 11-heap/task-scheduler.md
           - Expert:
               - Median of a stream: 11-heap/median-of-stream.md
               - Binary heap from scratch: 11-heap/binary-heap.md
+              - Smallest range covering K lists: 11-heap/smallest-range.md
       - Tries & Advanced:
           - 16-tries-advanced/index.md
           - Medium:
@@ -291,10 +306,13 @@ nav:
               - Rotated sorted array: 09-searching-sorting/rotated-sorted-array.md
               - Merge & quick sort: 09-searching-sorting/merge-quick-sort.md
               - Sort 0s 1s 2s: 09-searching-sorting/sort-colors.md
+              - Search a 2D matrix: 09-searching-sorting/search-2d-matrix.md
+              - Counting & radix sort: 09-searching-sorting/counting-radix-sort.md
           - Hard:
               - Find peak element: 09-searching-sorting/find-peak-element.md
               - Kth smallest (Quickselect): 09-searching-sorting/kth-smallest.md
               - Count inversions: 09-searching-sorting/count-inversions.md
+              - Koko eating bananas: 09-searching-sorting/koko-eating-bananas.md
           - Expert:
               - Median of two sorted arrays: 09-searching-sorting/median-two-sorted-arrays.md
               - Split array largest sum: 09-searching-sorting/split-array-largest-sum.md

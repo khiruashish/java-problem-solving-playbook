@@ -43,13 +43,16 @@ for (int i = 0; i < n; i++) {
 |---|---------|-------|----------|
 | 1 | [Implement a stack with an array](array-stack.md) | <span class="badge easy">Easy</span> | Top index + doubling |
 | 2 | [Queue using two stacks (and stack using a queue)](queue-using-stacks.md) | <span class="badge easy">Easy</span> | Amortised transfer |
-| 3 | [Min stack in O(1)](min-stack.md) | <span class="badge medium">Medium</span> | Store the min with each entry |
-| 4 | [Next greater element](next-greater-element.md) | <span class="badge medium">Medium</span> | Monotonic stack |
-| 5 | [Evaluate postfix (RPN)](evaluate-rpn.md) | <span class="badge medium">Medium</span> | Operand stack |
-| 6 | [Daily temperatures](daily-temperatures.md) | <span class="badge medium">Medium</span> | Stack of waiting indexes |
-| 7 | [Infix to postfix / prefix](infix-to-postfix.md) | <span class="badge hard">Hard</span> | Shunting-yard |
-| 8 | [Sliding window maximum](sliding-window-maximum.md) | <span class="badge hard">Hard</span> | Monotonic deque |
-| 9 | [Largest rectangle in histogram](largest-rectangle-histogram.md) | <span class="badge expert">Expert</span> | Previous/next smaller |
-| 10 | [Basic calculator](basic-calculator.md) | <span class="badge expert">Expert</span> | Recursive descent / two stacks |
+| 3 | [Stack using queues](stack-using-queues.md) | <span class="badge easy">Easy</span> | Rotate on push, or drain on pop |
+| 4 | [Min stack in O(1)](min-stack.md) | <span class="badge medium">Medium</span> | Store the min with each entry |
+| 5 | [Next greater element](next-greater-element.md) | <span class="badge medium">Medium</span> | Monotonic stack |
+| 6 | [Evaluate postfix (RPN)](evaluate-rpn.md) | <span class="badge medium">Medium</span> | Operand stack |
+| 7 | [Daily temperatures](daily-temperatures.md) | <span class="badge medium">Medium</span> | Stack of waiting indexes |
+| 8 | [Asteroid collision](asteroid-collision.md) | <span class="badge medium">Medium</span> | Stack of survivors |
+| 9 | [Infix to postfix / prefix](infix-to-postfix.md) | <span class="badge hard">Hard</span> | Shunting-yard |
+| 10 | [Sliding window maximum](sliding-window-maximum.md) | <span class="badge hard">Hard</span> | Monotonic deque |
+| 11 | [Decode string](decode-string.md) | <span class="badge hard">Hard</span> | Push count + outer string at `[` |
+| 12 | [Largest rectangle in histogram](largest-rectangle-histogram.md) | <span class="badge expert">Expert</span> | Previous/next smaller |
+| 13 | [Basic calculator](basic-calculator.md) | <span class="badge expert">Expert</span> | Recursive descent / two stacks |
 
 Also in this playbook: [Valid parentheses](../01-strings/valid-parentheses.md) · [Trapping rain water (monotonic stack)](../02-arrays/trapping-rain-water.md).

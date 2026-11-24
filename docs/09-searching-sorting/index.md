@@ -48,8 +48,11 @@ return lo;   // first true, or n if none
 | 4 | [Search in rotated sorted array](rotated-sorted-array.md) | <span class="badge medium">Medium</span> | One half is always sorted |
 | 5 | [Merge sort & quick sort](merge-quick-sort.md) | <span class="badge medium">Medium</span> | Divide & conquer |
 | 6 | [Sort 0s, 1s, 2s](sort-colors.md) | <span class="badge medium">Medium</span> | Dutch national flag |
-| 7 | [Find a peak element](find-peak-element.md) | <span class="badge hard">Hard</span> | Binary search on the slope |
-| 8 | [Kth smallest: Quickselect](kth-smallest.md) | <span class="badge hard">Hard</span> | Partition one side |
-| 9 | [Count inversions](count-inversions.md) | <span class="badge hard">Hard</span> | Count while merging |
-| 10 | [Median of two sorted arrays](median-two-sorted-arrays.md) | <span class="badge expert">Expert</span> | Partition binary search |
-| 11 | [Split array largest sum / allocate pages](split-array-largest-sum.md) | <span class="badge expert">Expert</span> | Binary search on the answer |
+| 7 | [Search a 2D matrix](search-2d-matrix.md) | <span class="badge medium">Medium</span> | Virtual array · staircase from top-right |
+| 8 | [Counting & radix sort](counting-radix-sort.md) | <span class="badge medium">Medium</span> | Values as indexes · byte-wise stable passes |
+| 9 | [Find a peak element](find-peak-element.md) | <span class="badge hard">Hard</span> | Binary search on the slope |
+| 10 | [Kth smallest: Quickselect](kth-smallest.md) | <span class="badge hard">Hard</span> | Partition one side |
+| 11 | [Count inversions](count-inversions.md) | <span class="badge hard">Hard</span> | Count while merging |
+| 12 | [Koko eating bananas](koko-eating-bananas.md) | <span class="badge hard">Hard</span> | Binary search on the answer |
+| 13 | [Median of two sorted arrays](median-two-sorted-arrays.md) | <span class="badge expert">Expert</span> | Partition binary search |
+| 14 | [Split array largest sum / allocate pages](split-array-largest-sum.md) | <span class="badge expert">Expert</span> | Binary search on the answer |

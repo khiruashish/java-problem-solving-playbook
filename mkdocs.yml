@@ -93,6 +93,9 @@ nav:
       - Big-O cheat sheet: 00-foundations/big-o.md
       - Recursion mental model: 00-foundations/recursion-mental-model.md
       - Java toolbox: 00-foundations/java-toolbox.md
+      - Pattern recognition: 00-foundations/pattern-recognition.md
+      - Constraints → complexity: 00-foundations/constraints-to-complexity.md
+      - Stress testing: 00-foundations/stress-testing.md
   - Core Coding:
       - Strings:
           - 01-strings/index.md
@@ -103,6 +106,7 @@ nav:
               - Character frequency: 01-strings/character-frequency.md
               - Anagram check: 01-strings/anagram.md
               - First non-repeating char: 01-strings/first-non-repeating-char.md
+              - Count and say: 01-strings/count-and-say.md
           - Medium:
               - Reverse words: 01-strings/reverse-words.md
               - String compression: 01-strings/string-compression.md
@@ -110,12 +114,14 @@ nav:
               - Valid parentheses: 01-strings/valid-parentheses.md
               - String permutations: 01-strings/string-permutations.md
               - Group anagrams: 01-strings/group-anagrams.md
+              - String to integer (atoi): 01-strings/string-to-integer.md
           - Hard:
               - Longest substring w/o repeating: 01-strings/longest-substring-without-repeating.md
               - Longest palindromic substring: 01-strings/longest-palindromic-substring.md
           - Expert:
               - Minimum window substring: 01-strings/minimum-window-substring.md
               - KMP & Rabin–Karp: 01-strings/kmp-pattern-search.md
+              - Z-algorithm: 01-strings/z-algorithm.md
       - Arrays:
           - 02-arrays/index.md
           - Easy:
@@ -125,17 +131,20 @@ nav:
               - Move zeros: 02-arrays/move-zeros.md
               - Remove duplicates (sorted): 02-arrays/remove-duplicates-sorted.md
               - Missing number: 02-arrays/missing-number.md
+              - Majority element: 02-arrays/majority-element.md
           - Medium:
               - Two sum: 02-arrays/two-sum.md
               - Rotate array: 02-arrays/rotate-array.md
               - Kadane max subarray: 02-arrays/max-subarray-sum.md
               - Buy & sell stock: 02-arrays/buy-sell-stock.md
+              - 3Sum: 02-arrays/three-sum.md
           - Hard:
               - Product except self: 02-arrays/product-except-self.md
               - Merge intervals: 02-arrays/merge-intervals.md
               - Next permutation: 02-arrays/next-permutation.md
           - Expert:
               - Trapping rain water: 02-arrays/trapping-rain-water.md
+              - First missing positive: 02-arrays/first-missing-positive.md
       - Logical & Math:
           - 03-logical/index.md
           - FizzBuzz: 03-logical/fizzbuzz.md
@@ -145,9 +154,12 @@ nav:
           - Primes & sieve: 03-logical/prime-numbers.md
           - Perfect & strong numbers: 03-logical/perfect-strong-numbers.md
           - Leap year: 03-logical/leap-year.md
+          - Happy number: 03-logical/happy-number.md
           - Base conversion: 03-logical/base-conversion.md
           - Pattern printing: 03-logical/pattern-printing.md
           - LCM of 1..n: 03-logical/lcm-of-range.md
+          - Roman numerals: 03-logical/roman-numerals.md
+          - Excel column title: 03-logical/excel-column.md
       - Recursion:
           - 04-recursion/index.md
           - Factorial: 04-recursion/factorial.md
@@ -157,10 +169,13 @@ nav:
           - Tower of Hanoi: 04-recursion/tower-of-hanoi.md
           - Generate parentheses: 04-recursion/generate-parentheses.md
           - Letter combinations: 04-recursion/letter-combinations.md
+          - Combinations: 04-recursion/combinations.md
           - Subsets: 04-recursion/subsets.md
           - Combination sum: 04-recursion/combination-sum.md
           - Permutations II: 04-recursion/permutations-ii.md
           - Word search: 04-recursion/word-search.md
+          - Rat in a maze: 04-recursion/rat-in-a-maze.md
+          - Palindrome partitioning: 04-recursion/palindrome-partitioning.md
           - N-Queens: 04-recursion/n-queens.md
           - Sudoku solver: 04-recursion/sudoku-solver.md
       - Java 8 Streams:
@@ -168,8 +183,11 @@ nav:
           - Numbers & lists: 05-java8/stream-basics.md
           - Strings: 05-java8/string-streams.md
           - Employee dataset: 05-java8/employee-streams.md
+          - Map API & advanced Collectors: 05-java8/map-collectors-advanced.md
+          - Transactions dataset: 05-java8/transaction-streams.md
           - Optional deep-dive: 05-java8/optional.md
           - Custom collectors: 05-java8/custom-collectors.md
+          - Laziness & index tricks: 05-java8/lazy-stream-tricks.md
           - Parallel stream pitfalls: 05-java8/parallel-stream-pitfalls.md
   - Data Structures:
       - Linked List:

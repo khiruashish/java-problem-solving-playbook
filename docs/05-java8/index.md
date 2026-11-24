@@ -38,8 +38,11 @@ summarizingDouble(f)                                // count/min/max/avg/sum in 
 | [Numbers & lists](stream-basics.md) | 17 | <span class="badge easy">Easy</span> → <span class="badge medium">Medium</span> |
 | [Strings](string-streams.md) | 15 | <span class="badge easy">Easy</span> → <span class="badge medium">Medium</span> |
 | [Employee dataset](employee-streams.md) | 17 | <span class="badge medium">Medium</span> → <span class="badge hard">Hard</span> |
+| [Map API & advanced Collectors](map-collectors-advanced.md) | 11 | <span class="badge medium">Medium</span> → <span class="badge hard">Hard</span> |
+| [Transactions dataset](transaction-streams.md) | 11 | <span class="badge medium">Medium</span> → <span class="badge hard">Hard</span> |
 | [Optional deep-dive](optional.md) | 8 | <span class="badge medium">Medium</span> |
 | [Custom collectors & teeing](custom-collectors.md) | 6 | <span class="badge hard">Hard</span> |
+| [Laziness & index tricks](lazy-stream-tricks.md) | 12 | <span class="badge hard">Hard</span> |
 | [Parallel stream pitfalls](parallel-stream-pitfalls.md) | 4 | <span class="badge expert">Expert</span> |
 
 !!! warning "Pitfalls interviewers probe"

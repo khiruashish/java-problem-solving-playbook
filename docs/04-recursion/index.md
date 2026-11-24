@@ -28,11 +28,14 @@ void backtrack(State s, List<Answer> out) {
 | 5 | [Tower of Hanoi](tower-of-hanoi.md) | <span class="badge medium">Medium</span> | Tree (2 calls) |
 | 6 | [Generate parentheses](generate-parentheses.md) | <span class="badge medium">Medium</span> | Backtracking with open/close counts |
 | 7 | [Letter combinations of a phone number](letter-combinations.md) | <span class="badge medium">Medium</span> | Cartesian product |
-| 8 | [Subsets / power set](subsets.md) | <span class="badge hard">Hard</span> | Backtracking |
-| 9 | [Combination sum I & II](combination-sum.md) | <span class="badge hard">Hard</span> | Start index + duplicate skip |
-| 10 | [Permutations II (with duplicates)](permutations-ii.md) | <span class="badge hard">Hard</span> | Used-twin rule |
-| 11 | [Word search](word-search.md) | <span class="badge hard">Hard</span> | Grid backtracking |
-| 12 | [N-Queens](n-queens.md) | <span class="badge expert">Expert</span> | Backtracking + pruning |
-| 13 | [Sudoku solver](sudoku-solver.md) | <span class="badge expert">Expert</span> | Bitmasks + most-constrained cell |
+| 8 | [Combinations (n choose k)](combinations.md) | <span class="badge medium">Medium</span> | Start index + "enough left" pruning |
+| 9 | [Subsets / power set](subsets.md) | <span class="badge hard">Hard</span> | Backtracking |
+| 10 | [Combination sum I & II](combination-sum.md) | <span class="badge hard">Hard</span> | Start index + duplicate skip |
+| 11 | [Permutations II (with duplicates)](permutations-ii.md) | <span class="badge hard">Hard</span> | Used-twin rule |
+| 12 | [Word search](word-search.md) | <span class="badge hard">Hard</span> | Grid backtracking |
+| 13 | [Rat in a maze](rat-in-a-maze.md) | <span class="badge hard">Hard</span> | Grid backtracking, mark and unmark |
+| 14 | [Palindrome partitioning](palindrome-partitioning.md) | <span class="badge hard">Hard</span> | First piece + rest, with a palindrome table |
+| 15 | [N-Queens](n-queens.md) | <span class="badge expert">Expert</span> | Backtracking + pruning |
+| 16 | [Sudoku solver](sudoku-solver.md) | <span class="badge expert">Expert</span> | Bitmasks + most-constrained cell |
 
 Also see: [String permutations](../01-strings/string-permutations.md) · [Longest common prefix (divide & conquer)](../01-strings/longest-common-prefix.md) · [Max subarray (divide & conquer)](../02-arrays/max-subarray-sum.md).

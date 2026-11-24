@@ -183,9 +183,14 @@ body::after {               /* receding neon grid at the bottom of the viewport 
   text-shadow: 0 0 12px color-mix(in srgb, var(--pb-accent-2) 45%, transparent);
 }
 .md-nav__link:hover { color: var(--pb-accent-1); }
-.md-nav__title { color: var(--pb-text-dim); background: transparent !important; box-shadow: none !important; }
+/* sticky sidebar titles: frosted so scrolled items don't show through, without a hard dark bar */
+.md-nav__title,
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
-  background: transparent !important; box-shadow: none !important; color: var(--pb-text-dim);
+  color: var(--pb-text-dim);
+  background: color-mix(in srgb, var(--pb-bg) 82%, transparent) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: none !important;
 }
 @media screen and (max-width: 76.234375em) {
   .md-nav--primary .md-nav__title, .md-nav--primary, .md-sidebar--primary { background: var(--pb-glass-strong); }
@@ -503,8 +508,9 @@ html { scrollbar-color: color-mix(in srgb, var(--pb-accent-1) 50%, transparent) 
 
 /* ---------- Responsive ---------- */
 @media (max-width: 60em) {
-  .md-typeset .pb-hero { grid-template-columns: 1fr; padding: 2.2rem 1.3rem; }
-  .md-typeset .pb-scene { --s: 7.5rem; order: -1; height: calc(var(--s) * 1.9); }
+  .md-typeset .pb-hero { grid-template-columns: 1fr; gap: .4rem; padding: 1.6rem 1.1rem 1.8rem; }
+  .md-typeset .pb-scene { --s: 6.5rem; order: -1; height: calc(var(--s) * 1.75); }
+  .md-typeset .pb-hero h1 { font-size: 1.7rem; }
 }
 
 /* ---------- Reduced motion ---------- */

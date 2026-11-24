@@ -15,8 +15,8 @@ optimal one, and you explain *why* each step is taken.
 
 ## 2. Goal
 
-Build a **MkDocs Material** site ("3D" visual theme: layered depth cards, tilt-on-hover, gradient
-hero, glowing difficulty badges) that teaches problem solving in **Java 21** from **Easy → Expert**,
+Build a **MkDocs Material** site (dark "neon glass" 3D theme: frosted-glass cards with tilt + spotlight,
+rotating 3D cube hero, neon difficulty badges, light mode as an alternative) that teaches problem solving in **Java 21** from **Easy → Expert**,
 covering everything typically asked on GeeksforGeeks, LeetCode, HackerRank and in real interviews:
 
 - All **string operations** and string problems
@@ -129,7 +129,7 @@ Embedded from the real, compiled source file via `--8<-- "src/main/java/..."` (n
 
 ## 8. Current status
 
-All 17 topics (00–16) are implemented to this template: **156 problems + ~70 Java 8 stream questions**, 160 JUnit
+All 17 topics (00–16) are implemented to this template: **201 problems + ~104 Java 8 stream questions**, 222 JUnit
 tests, `mkdocs build --strict` clean. `docs/roadmap.md` lists candidate problems for further batches.
 
 ## 9. Next-batch prompt (copy-paste)

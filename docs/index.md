@@ -6,14 +6,41 @@ hide:
 
 <div class="pb-hero" markdown>
 
+<div class="pb-hero-copy" markdown>
+
+<span class="pb-hero-eyebrow">Java 21 · Easy → Expert · every line tested</span>
+
 # Java Problem-Solving Playbook
 
 From **"I don't know where to start"** to **expert-level** answers. Every problem is solved the way a
 15-year interviewer expects: think aloud, start with brute force, find the waste, reach the optimal
-pattern. You get **recursive and iterative/normal** versions and a **Java 8 Streams** take where one fits.
+pattern, with **recursive, iterative and Java 8 Streams** versions where they fit.
 
 [Start with Foundations :material-rocket-launch:](00-foundations/index.md){ .md-button .md-button--primary }
 [See the Roadmap :material-map:](roadmap.md){ .md-button }
+
+<div class="pb-stats">
+<div class="pb-stat"><b>156</b><span>problems</span></div>
+<div class="pb-stat"><b>17</b><span>topics</span></div>
+<div class="pb-stat"><b>40</b><span>animated traces</span></div>
+<div class="pb-stat"><b>~70</b><span>stream questions</span></div>
+</div>
+
+</div>
+
+<div class="pb-scene" aria-hidden="true">
+<div class="pb-cube-wrap">
+<div class="pb-cube">
+<div class="pb-face">{ }<small>JAVA 21</small></div>
+<div class="pb-face">O(n)<small>BIG-O</small></div>
+<div class="pb-face">λ<small>STREAMS</small></div>
+<div class="pb-face">dp[]<small>DP</small></div>
+<div class="pb-face">⇄</div>
+<div class="pb-face">∑</div>
+</div>
+</div>
+<div class="pb-cube-shadow"></div>
+</div>
 
 </div>
 

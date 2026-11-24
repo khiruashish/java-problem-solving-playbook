@@ -6,20 +6,47 @@ hide:
 
 <div class="pb-hero" markdown>
 
+<div class="pb-hero-copy" markdown>
+
+<span class="pb-hero-eyebrow">Java 21 · Easy → Expert · every line tested</span>
+
 # Java Problem-Solving Playbook
 
 From **"I don't know where to start"** to **expert-level** answers. Every problem is solved the way a
 15-year interviewer expects: think aloud, start with brute force, find the waste, reach the optimal
-pattern. You get **recursive and iterative/normal** versions and a **Java 8 Streams** take where one fits.
+pattern, with **recursive, iterative and Java 8 Streams** versions where they fit.
 
 [Start with Foundations :material-rocket-launch:](00-foundations/index.md){ .md-button .md-button--primary }
 [See the Roadmap :material-map:](roadmap.md){ .md-button }
+
+<div class="pb-stats">
+<div class="pb-stat"><b>201</b><span>problems</span></div>
+<div class="pb-stat"><b>17</b><span>topics</span></div>
+<div class="pb-stat"><b>40</b><span>animated traces</span></div>
+<div class="pb-stat"><b>~104</b><span>stream questions</span></div>
+</div>
+
+</div>
+
+<div class="pb-scene" aria-hidden="true">
+<div class="pb-cube-wrap">
+<div class="pb-cube">
+<div class="pb-face">{ }<small>JAVA 21</small></div>
+<div class="pb-face">O(n)<small>BIG-O</small></div>
+<div class="pb-face">λ<small>STREAMS</small></div>
+<div class="pb-face">dp[]<small>DP</small></div>
+<div class="pb-face">⇄</div>
+<div class="pb-face">∑</div>
+</div>
+</div>
+<div class="pb-cube-shadow"></div>
+</div>
 
 </div>
 
 ## Pick a track
 
-**156 problems + ~70 Java 8 questions across 17 topics**, every approach compiled and verified by **160 JUnit tests** (most of them cross-check against a brute force on hundreds of random inputs).
+**201 problems + ~104 Java 8 questions across 17 topics**, every approach compiled and verified by **222 JUnit tests** (most of them cross-check against a brute force on hundreds of random inputs).
 
 <div class="grid cards" markdown>
 
@@ -27,9 +54,9 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     ---
 
-    UMPIRE problem-solving framework, Big-O, recursion mental model, Java toolbox.
+    UMPIRE framework, Big-O, recursion mental model, Java toolbox, pattern recognition, constraints → complexity, stress testing.
 
-    [:octicons-arrow-right-24: 4 guides](00-foundations/index.md)
+    [:octicons-arrow-right-24: 7 guides](00-foundations/index.md)
 
 -   :material-format-text:{ .lg .middle } **01 · Strings**
 
@@ -37,7 +64,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Reverse, palindromes, anagrams, frequency, sliding window, KMP, Manacher, minimum window.
 
-    [:octicons-arrow-right-24: 16 problems](01-strings/index.md)
+    [:octicons-arrow-right-24: 19 problems](01-strings/index.md)
 
 -   :material-code-array:{ .lg .middle } **02 · Arrays**
 
@@ -45,7 +72,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Two pointers, Kadane, prefix products, intervals, next permutation, trapping rain water.
 
-    [:octicons-arrow-right-24: 14 problems](02-arrays/index.md)
+    [:octicons-arrow-right-24: 17 problems](02-arrays/index.md)
 
 -   :material-calculator-variant:{ .lg .middle } **03 · Logical & Math**
 
@@ -53,7 +80,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     FizzBuzz, digits & overflow, primes & sieve, GCD/LCM, base conversion, patterns.
 
-    [:octicons-arrow-right-24: 10 problems](03-logical/index.md)
+    [:octicons-arrow-right-24: 13 problems](03-logical/index.md)
 
 -   :material-source-branch:{ .lg .middle } **04 · Recursion & Backtracking**
 
@@ -61,7 +88,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Factorial → Fibonacci memo → Hanoi → subsets → combination sum → N-Queens → Sudoku.
 
-    [:octicons-arrow-right-24: 13 problems](04-recursion/index.md)
+    [:octicons-arrow-right-24: 16 problems](04-recursion/index.md)
 
 -   :material-language-java:{ .lg .middle } **05 · Java 8+ Streams**
 
@@ -69,7 +96,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Numbers, strings, the Employee round, Optional, custom collectors, parallel pitfalls.
 
-    [:octicons-arrow-right-24: ~70 questions](05-java8/index.md)
+    [:octicons-arrow-right-24: ~104 questions](05-java8/index.md)
 
 -   :material-link-variant:{ .lg .middle } **06 · Linked List**
 
@@ -77,7 +104,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Reversal, slow/fast pointers, Floyd's cycle, k-group reversal, LRU cache, merge K lists.
 
-    [:octicons-arrow-right-24: 12 problems](06-linked-list/index.md)
+    [:octicons-arrow-right-24: 15 problems](06-linked-list/index.md)
 
 -   :material-layers-triple:{ .lg .middle } **07 · Stack & Queue**
 
@@ -85,7 +112,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Monotonic stack & deque, min stack, RPN, shunting-yard, histogram, a full calculator.
 
-    [:octicons-arrow-right-24: 10 problems](07-stack-queue/index.md)
+    [:octicons-arrow-right-24: 13 problems](07-stack-queue/index.md)
 
 -   :material-pound:{ .lg .middle } **08 · Hashing**
 
@@ -93,7 +120,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Prefix sum + map, longest consecutive, top K, meet in the middle, HashMap from scratch.
 
-    [:octicons-arrow-right-24: 8 problems](08-hashing/index.md)
+    [:octicons-arrow-right-24: 11 problems](08-hashing/index.md)
 
 -   :material-sort-ascending:{ .lg .middle } **09 · Searching & Sorting**
 
@@ -101,7 +128,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Binary search templates, all classic sorts, Quickselect, median of two arrays, search on answer.
 
-    [:octicons-arrow-right-24: 11 problems](09-searching-sorting/index.md)
+    [:octicons-arrow-right-24: 14 problems](09-searching-sorting/index.md)
 
 -   :material-file-tree:{ .lg .middle } **10 · Trees & BST**
 
@@ -109,7 +136,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Traversals incl. Morris, views, LCA, validate BST, build & serialize, max path sum.
 
-    [:octicons-arrow-right-24: 11 problems](10-trees/index.md)
+    [:octicons-arrow-right-24: 14 problems](10-trees/index.md)
 
 -   :material-triangle-outline:{ .lg .middle } **11 · Heap**
 
@@ -117,7 +144,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Top-K patterns, merge K arrays, task scheduler, two-heap median, heap from scratch.
 
-    [:octicons-arrow-right-24: 7 problems](11-heap/index.md)
+    [:octicons-arrow-right-24: 10 problems](11-heap/index.md)
 
 -   :material-graph:{ .lg .middle } **12 · Graphs**
 
@@ -125,7 +152,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     BFS/DFS, islands, topological sort, Dijkstra, Union-Find, MST, Bellman-Ford, Floyd-Warshall.
 
-    [:octicons-arrow-right-24: 11 problems](12-graphs/index.md)
+    [:octicons-arrow-right-24: 14 problems](12-graphs/index.md)
 
 -   :material-table-large:{ .lg .middle } **13 · Dynamic Programming**
 
@@ -133,7 +160,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Recursion → memo → table → O(1): knapsack, LIS, LCS, edit distance, interval DP.
 
-    [:octicons-arrow-right-24: 12 problems](13-dynamic-programming/index.md)
+    [:octicons-arrow-right-24: 15 problems](13-dynamic-programming/index.md)
 
 -   :material-lightning-bolt:{ .lg .middle } **14 · Greedy**
 
@@ -141,7 +168,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Activity selection, jump game, gas station, platforms, Huffman — each proven vs brute force.
 
-    [:octicons-arrow-right-24: 7 problems](14-greedy/index.md)
+    [:octicons-arrow-right-24: 10 problems](14-greedy/index.md)
 
 -   :material-chip:{ .lg .middle } **15 · Bit Manipulation**
 
@@ -149,7 +176,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Masks, Kernighan, single number I/II/III, XOR tricks, bitmask subsets, max-XOR trie.
 
-    [:octicons-arrow-right-24: 7 problems](15-bit-manipulation/index.md)
+    [:octicons-arrow-right-24: 10 problems](15-bit-manipulation/index.md)
 
 -   :material-family-tree:{ .lg .middle } **16 · Tries & Advanced**
 
@@ -157,7 +184,7 @@ pattern. You get **recursive and iterative/normal** versions and a **Java 8 Stre
 
     Trie, word search II, autocomplete, segment tree, Fenwick tree, LFU cache.
 
-    [:octicons-arrow-right-24: 7 problems](16-tries-advanced/index.md)
+    [:octicons-arrow-right-24: 10 problems](16-tries-advanced/index.md)
 
 </div>
 

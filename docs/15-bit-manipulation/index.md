@@ -27,10 +27,13 @@
 | 1 | [Check / set / clear / toggle a bit](bit-basics.md) | <span class="badge easy">Easy</span> | Masks |
 | 2 | [Power of two (and four)](power-of-two.md) | <span class="badge easy">Easy</span> | `n & (n−1)` |
 | 3 | [Count set bits](count-set-bits.md) | <span class="badge easy">Easy</span> | Brian Kernighan |
-| 4 | [Single number I, II, III](single-number.md) | <span class="badge medium">Medium</span> | XOR / bit counting mod 3 |
-| 5 | [XOR tricks: swap, odd/even, add without +](xor-tricks.md) | <span class="badge medium">Medium</span> | XOR identities |
-| 6 | [Subsets via bitmask, submasks, Gray code](bitmask-subsets.md) | <span class="badge hard">Hard</span> | Enumerate masks |
-| 7 | [Maximum XOR of two numbers](maximum-xor.md) | <span class="badge expert">Expert</span> | Bitwise trie / prefix greedy |
+| 4 | [Reverse bits](reverse-bits.md) | <span class="badge easy">Easy</span> | `>>>` loop · swap halves with masks |
+| 5 | [Single number I, II, III](single-number.md) | <span class="badge medium">Medium</span> | XOR / bit counting mod 3 |
+| 6 | [XOR tricks: swap, odd/even, add without +](xor-tricks.md) | <span class="badge medium">Medium</span> | XOR identities |
+| 7 | [Counting bits (0..n)](counting-bits.md) | <span class="badge medium">Medium</span> | `bits[i >> 1] + (i & 1)` |
+| 8 | [Subsets via bitmask, submasks, Gray code](bitmask-subsets.md) | <span class="badge hard">Hard</span> | Enumerate masks |
+| 9 | [Divide two integers](divide-two-integers.md) | <span class="badge hard">Hard</span> | Binary long division with shifts |
+| 10 | [Maximum XOR of two numbers](maximum-xor.md) | <span class="badge expert">Expert</span> | Bitwise trie / prefix greedy |
 
 Also bit-based elsewhere: [Missing number (XOR)](../02-arrays/missing-number.md) · [Subsets](../04-recursion/subsets.md) ·
 [N-Queens bitmask count](../04-recursion/n-queens.md) · [Fenwick tree (`i & -i`)](../16-tries-advanced/index.md).

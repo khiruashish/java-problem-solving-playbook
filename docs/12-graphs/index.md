@@ -33,13 +33,16 @@
 | # | Problem | Level | Key idea |
 |---|---------|-------|----------|
 | 1 | [BFS & DFS](bfs-dfs.md) | <span class="badge easy">Easy</span> | Queue vs stack |
-| 2 | [Number of islands](number-of-islands.md) | <span class="badge medium">Medium</span> | Grid flood fill |
-| 3 | [Detect a cycle](cycle-detection.md) | <span class="badge medium">Medium</span> | Parent check / three colours |
-| 4 | [Topological sort](topological-sort.md) | <span class="badge medium">Medium</span> | Kahn / DFS finish order |
-| 5 | [Rotting oranges](rotting-oranges.md) | <span class="badge medium">Medium</span> | Multi-source BFS |
-| 6 | [Course schedule](course-schedule.md) | <span class="badge hard">Hard</span> | Topological sort on prerequisites |
-| 7 | [Dijkstra's shortest path](dijkstra.md) | <span class="badge hard">Hard</span> | Min-heap + relaxation |
-| 8 | [Union-Find / number of provinces](union-find.md) | <span class="badge hard">Hard</span> | Path compression + rank |
-| 9 | [Word ladder](word-ladder.md) | <span class="badge expert">Expert</span> | BFS on an implicit graph |
-| 10 | [Minimum spanning tree](minimum-spanning-tree.md) | <span class="badge expert">Expert</span> | Kruskal / Prim |
-| 11 | [Bellman-Ford & Floyd-Warshall](bellman-ford-floyd-warshall.md) | <span class="badge expert">Expert</span> | Relaxation rounds |
+| 2 | [Flood fill](flood-fill.md) | <span class="badge easy">Easy</span> | Recolour = visited mark |
+| 3 | [Number of islands](number-of-islands.md) | <span class="badge medium">Medium</span> | Grid flood fill |
+| 4 | [Detect a cycle](cycle-detection.md) | <span class="badge medium">Medium</span> | Parent check / three colours |
+| 5 | [Topological sort](topological-sort.md) | <span class="badge medium">Medium</span> | Kahn / DFS finish order |
+| 6 | [Rotting oranges](rotting-oranges.md) | <span class="badge medium">Medium</span> | Multi-source BFS |
+| 7 | [Bipartite check](bipartite.md) | <span class="badge medium">Medium</span> | 2-colouring; conflict = odd cycle |
+| 8 | [Course schedule](course-schedule.md) | <span class="badge hard">Hard</span> | Topological sort on prerequisites |
+| 9 | [Dijkstra's shortest path](dijkstra.md) | <span class="badge hard">Hard</span> | Min-heap + relaxation |
+| 10 | [Union-Find / number of provinces](union-find.md) | <span class="badge hard">Hard</span> | Path compression + rank |
+| 11 | [Word ladder](word-ladder.md) | <span class="badge expert">Expert</span> | BFS on an implicit graph |
+| 12 | [Minimum spanning tree](minimum-spanning-tree.md) | <span class="badge expert">Expert</span> | Kruskal / Prim |
+| 13 | [Bellman-Ford & Floyd-Warshall](bellman-ford-floyd-warshall.md) | <span class="badge expert">Expert</span> | Relaxation rounds |
+| 14 | [Strongly connected components](strongly-connected-components.md) | <span class="badge expert">Expert</span> | Kosaraju (2 passes) · Tarjan low-link |

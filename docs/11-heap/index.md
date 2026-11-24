@@ -27,12 +27,15 @@
 | # | Problem | Level | Key idea |
 |---|---------|-------|----------|
 | 1 | [Kth largest (array & stream)](kth-largest.md) | <span class="badge easy">Easy</span> | Min-heap of size k |
-| 2 | [Top K frequent words](top-k-frequent-words.md) | <span class="badge medium">Medium</span> | Comparator with a tie-break |
-| 3 | [K closest points to the origin](k-closest-points.md) | <span class="badge medium">Medium</span> | Max-heap of size k |
-| 4 | [Merge K sorted arrays](merge-k-sorted-arrays.md) | <span class="badge hard">Hard</span> | Heap of (value, array, index) |
-| 5 | [Task scheduler](task-scheduler.md) | <span class="badge hard">Hard</span> | Greedy max-heap + cooldown |
-| 6 | [Median of a data stream](median-of-stream.md) | <span class="badge expert">Expert</span> | Two heaps |
-| 7 | [Binary heap from scratch + heapsort](binary-heap.md) | <span class="badge expert">Expert</span> | Sift up / sift down |
+| 2 | [Last stone weight](last-stone-weight.md) | <span class="badge easy">Easy</span> | Max-heap simulation |
+| 3 | [Top K frequent words](top-k-frequent-words.md) | <span class="badge medium">Medium</span> | Comparator with a tie-break |
+| 4 | [K closest points to the origin](k-closest-points.md) | <span class="badge medium">Medium</span> | Max-heap of size k |
+| 5 | [Reorganize string](reorganize-string.md) | <span class="badge medium">Medium</span> | Most frequent first, hold back the last |
+| 6 | [Merge K sorted arrays](merge-k-sorted-arrays.md) | <span class="badge hard">Hard</span> | Heap of (value, array, index) |
+| 7 | [Task scheduler](task-scheduler.md) | <span class="badge hard">Hard</span> | Greedy max-heap + cooldown |
+| 8 | [Median of a data stream](median-of-stream.md) | <span class="badge expert">Expert</span> | Two heaps |
+| 9 | [Binary heap from scratch + heapsort](binary-heap.md) | <span class="badge expert">Expert</span> | Sift up / sift down |
+| 10 | [Smallest range covering K lists](smallest-range.md) | <span class="badge expert">Expert</span> | K-way merge + running max |
 
 Also heap-based: [Merge K sorted lists](../06-linked-list/merge-k-sorted-lists.md) · [Top K frequent elements](../08-hashing/top-k-frequent.md) ·
 [Kth smallest / Quickselect](../09-searching-sorting/kth-smallest.md) · [Sliding window maximum](../07-stack-queue/sliding-window-maximum.md).

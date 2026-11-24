@@ -41,12 +41,15 @@ It solves *count* subarrays with sum k, the *longest* subarray with sum k, equal
 |---|---------|-------|----------|
 | 1 | [Contains duplicate](contains-duplicate.md) | <span class="badge easy">Easy</span> | `Set.add` returns false |
 | 2 | [Intersection of two arrays](array-intersection.md) | <span class="badge easy">Easy</span> | Set / count map |
-| 3 | [Subarray sum equals K](subarray-sum-equals-k.md) | <span class="badge medium">Medium</span> | Prefix sum + count map |
-| 4 | [Longest consecutive sequence](longest-consecutive-sequence.md) | <span class="badge medium">Medium</span> | Start only at sequence starts |
-| 5 | [Top K frequent elements](top-k-frequent.md) | <span class="badge medium">Medium</span> | Heap of size k / bucket sort |
-| 6 | [Longest zero-sum subarray / equal 0s and 1s](longest-zero-sum-subarray.md) | <span class="badge hard">Hard</span> | Prefix sum + first index |
-| 7 | [4Sum II](four-sum-count.md) | <span class="badge hard">Hard</span> | Meet in the middle |
-| 8 | [Design a HashMap from scratch](my-hash-map.md) | <span class="badge expert">Expert</span> | Buckets, chaining, resize |
+| 3 | [Isomorphic strings](isomorphic-strings.md) | <span class="badge easy">Easy</span> | Bijection: two maps or last-seen index |
+| 4 | [Subarray sum equals K](subarray-sum-equals-k.md) | <span class="badge medium">Medium</span> | Prefix sum + count map |
+| 5 | [Longest consecutive sequence](longest-consecutive-sequence.md) | <span class="badge medium">Medium</span> | Start only at sequence starts |
+| 6 | [Top K frequent elements](top-k-frequent.md) | <span class="badge medium">Medium</span> | Heap of size k / bucket sort |
+| 7 | [Distinct elements in every window](distinct-in-window.md) | <span class="badge medium">Medium</span> | Sliding frequency map, drop zero counts |
+| 8 | [Longest zero-sum subarray / equal 0s and 1s](longest-zero-sum-subarray.md) | <span class="badge hard">Hard</span> | Prefix sum + first index |
+| 9 | [4Sum II](four-sum-count.md) | <span class="badge hard">Hard</span> | Meet in the middle |
+| 10 | [Subarray sums divisible by K](subarrays-divisible-by-k.md) | <span class="badge hard">Hard</span> | Prefix remainders, floorMod for negatives |
+| 11 | [Design a HashMap from scratch](my-hash-map.md) | <span class="badge expert">Expert</span> | Buckets, chaining, resize |
 
 Also hashing-based elsewhere: [Two sum](../02-arrays/two-sum.md) · [Group anagrams](../01-strings/group-anagrams.md) ·
 [First non-repeating char](../01-strings/first-non-repeating-char.md) · [LRU cache](../06-linked-list/lru-cache.md).

@@ -1,6 +1,6 @@
 # Java Problem-Solving Playbook
 
-A **MkDocs Material** site with a custom **3D theme** that teaches Java problem solving step by step,
+A **MkDocs Material** site with a custom dark **neon-glass 3D theme** that teaches Java problem solving step by step,
 from **Easy to Expert**: strings, arrays, logical/math, recursion and backtracking, Java 8+ streams, and
 every core data structure and algorithm (linked lists through tries, segment trees and DP).
 
@@ -29,8 +29,8 @@ mkdocs build --strict                 # what CI runs
 MASTER_PROMPT.md            the master prompt: scope, curriculum, page template, quality bar
 mkdocs.yml                  site config + navigation (Easy → Expert ordering)
 docs/                       one folder per topic; index.md = primer + problem table
-docs/assets/css/3d.css      3D theme (depth cards, tilt, gradient hero, raised badges)
-docs/assets/js/tilt.js      mouse-follow tilt for cards
+docs/assets/css/3d.css      neon-glass 3D theme (glass cards, rotating cube hero, neon badges, light + dark)
+docs/assets/js/tilt.js      mouse-follow tilt + spotlight for cards, parallax for the hero cube
 src/main/java/com/playbook/<topic>/   one class per problem, one public static method per approach
 src/test/java/com/playbook/<topic>/   JUnit 5 tests verifying every approach
 ```
@@ -39,24 +39,24 @@ src/test/java/com/playbook/<topic>/   JUnit 5 tests verifying every approach
 
 | # | Topic | Problems |
 |---|-------|----------|
-| 00 | Foundations | 4 guides |
-| 01 | Strings | 16 |
-| 02 | Arrays | 14 |
-| 03 | Logical & Math | 10 |
-| 04 | Recursion & Backtracking | 13 |
-| 05 | Java 8+ Streams | ~70 questions (6 banks) |
-| 06 | Linked List | 12 |
-| 07 | Stack & Queue | 10 |
-| 08 | Hashing | 8 |
-| 09 | Searching & Sorting | 11 |
-| 10 | Trees & BST | 11 |
-| 11 | Heap / Priority Queue | 7 |
-| 12 | Graphs | 11 |
-| 13 | Dynamic Programming | 12 |
-| 14 | Greedy | 7 |
-| 15 | Bit Manipulation | 7 |
-| 16 | Tries & Advanced | 7 |
-| | **Total** | **156 problems + ~70 stream questions** |
+| 00 | Foundations | 7 guides |
+| 01 | Strings | 19 |
+| 02 | Arrays | 17 |
+| 03 | Logical & Math | 13 |
+| 04 | Recursion & Backtracking | 16 |
+| 05 | Java 8+ Streams | ~104 questions (9 banks) |
+| 06 | Linked List | 15 |
+| 07 | Stack & Queue | 13 |
+| 08 | Hashing | 11 |
+| 09 | Searching & Sorting | 14 |
+| 10 | Trees & BST | 14 |
+| 11 | Heap / Priority Queue | 10 |
+| 12 | Graphs | 14 |
+| 13 | Dynamic Programming | 15 |
+| 14 | Greedy | 10 |
+| 15 | Bit Manipulation | 10 |
+| 16 | Tries & Advanced | 10 |
+| | **Total** | **201 problems + ~104 stream questions** |
 
 Every topic runs Easy → Expert. Most tests are **differential**: the optimal solution is checked against the brute force on
 hundreds of random inputs, and data structures built from scratch (HashMap, heap, LRU/LFU, trie, segment/Fenwick tree) are

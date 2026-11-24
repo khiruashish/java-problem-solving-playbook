@@ -1066,11 +1066,11 @@ def trie():
     allids = [n[0] for n in nodes]
 
     def lab():
-        return {k: f"{count[k]}{'*' if k in words else ''}" for k in exists if k != "root" or count[k]}
+        return {k: f"{count[k]}{'*' if k in words else ''}" for k in allids if k in exists and (k != "root" or count[k])}
 
     def state(marks=None, ptr=None):
         return {"hide": [k for k in allids if k not in exists], "labels": lab(),
-                "marks": marks or {k: "ok" for k in words}, "ptrs": {"n": ptr} if ptr else {}}
+                "marks": marks or {k: "ok" for k in allids if k in words}, "ptrs": {"n": ptr} if ptr else {}}
 
     t.frame("void insert", "A trie shares prefixes: each node is one character on the way to some words.", T=state())
     for w in ("apple", "app", "apt"):
@@ -1085,7 +1085,7 @@ def trie():
         words.add(w)
         t.frame("n.isWord = true", f"insert(\"{w}\"): walk/create {' → '.join(w)}, bump each prefixCount, and flag the "
                 f"last node as a word end." + (" Only the new branch was created." if w != "apple" else ""),
-                T=state({**{k: "ok" for k in words}, **{p: "hl" for p in path}}, path[-1]))
+                T=state({**{k: "ok" for k in allids if k in words}, **{p: "hl" for p in path}}, path[-1]))
     t.frame("boolean search", "search(\"app\"): the walk ends on a node flagged as a word → <strong>true</strong>.",
             T=state({"a": "win", "ap": "win", "app": "ok"}, "app"))
     t.frame("boolean search", "search(\"ap\"): the walk succeeds but \"p\" is not a word end → <strong>false</strong>. "

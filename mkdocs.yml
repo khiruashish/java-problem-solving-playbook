@@ -291,10 +291,13 @@ nav:
           - Hard:
               - Word search II: 16-tries-advanced/word-search-ii.md
               - Autocomplete: 16-tries-advanced/autocomplete.md
+              - Sparse table (RMQ): 16-tries-advanced/sparse-table.md
           - Expert:
               - Segment tree: 16-tries-advanced/segment-tree.md
               - Fenwick tree: 16-tries-advanced/fenwick-tree.md
               - LFU cache: 16-tries-advanced/lfu-cache.md
+              - Lazy segment tree: 16-tries-advanced/lazy-segment-tree.md
+              - Consistent hashing: 16-tries-advanced/consistent-hashing.md
   - Algorithms:
       - Searching & Sorting:
           - 09-searching-sorting/index.md
@@ -320,11 +323,13 @@ nav:
           - 12-graphs/index.md
           - Easy:
               - BFS & DFS: 12-graphs/bfs-dfs.md
+              - Flood fill: 12-graphs/flood-fill.md
           - Medium:
               - Number of islands: 12-graphs/number-of-islands.md
               - Cycle detection: 12-graphs/cycle-detection.md
               - Topological sort: 12-graphs/topological-sort.md
               - Rotting oranges: 12-graphs/rotting-oranges.md
+              - Bipartite check: 12-graphs/bipartite.md
           - Hard:
               - Course schedule: 12-graphs/course-schedule.md
               - Dijkstra: 12-graphs/dijkstra.md
@@ -333,6 +338,7 @@ nav:
               - Word ladder: 12-graphs/word-ladder.md
               - Minimum spanning tree: 12-graphs/minimum-spanning-tree.md
               - Bellman-Ford & Floyd-Warshall: 12-graphs/bellman-ford-floyd-warshall.md
+              - Strongly connected components: 12-graphs/strongly-connected-components.md
       - Dynamic Programming:
           - 13-dynamic-programming/index.md
           - Easy:
@@ -343,25 +349,31 @@ nav:
               - Longest increasing subsequence: 13-dynamic-programming/longest-increasing-subsequence.md
               - Unique paths: 13-dynamic-programming/unique-paths.md
               - 0/1 knapsack: 13-dynamic-programming/knapsack.md
+              - Stock with cooldown: 13-dynamic-programming/stock-with-cooldown.md
           - Hard:
               - Longest common subsequence: 13-dynamic-programming/longest-common-subsequence.md
               - Edit distance: 13-dynamic-programming/edit-distance.md
               - Partition equal subset: 13-dynamic-programming/partition-equal-subset.md
+              - Longest palindromic subsequence: 13-dynamic-programming/longest-palindromic-subsequence.md
           - Expert:
               - Word break: 13-dynamic-programming/word-break.md
               - Matrix chain multiplication: 13-dynamic-programming/matrix-chain-multiplication.md
               - Burst balloons: 13-dynamic-programming/burst-balloons.md
+              - Egg drop: 13-dynamic-programming/egg-drop.md
       - Greedy:
           - 14-greedy/index.md
           - Easy:
               - Assign cookies: 14-greedy/assign-cookies.md
+              - Lemonade change: 14-greedy/lemonade-change.md
           - Medium:
               - Activity selection: 14-greedy/activity-selection.md
               - Jump game: 14-greedy/jump-game.md
               - Gas station: 14-greedy/gas-station.md
+              - Non-overlapping intervals: 14-greedy/non-overlapping-intervals.md
           - Hard:
               - Minimum platforms: 14-greedy/minimum-platforms.md
               - Fractional knapsack: 14-greedy/fractional-knapsack.md
+              - Candy: 14-greedy/candy.md
           - Expert:
               - Huffman coding: 14-greedy/huffman-coding.md
       - Bit Manipulation:
@@ -370,11 +382,14 @@ nav:
               - Bit basics: 15-bit-manipulation/bit-basics.md
               - Power of two: 15-bit-manipulation/power-of-two.md
               - Count set bits: 15-bit-manipulation/count-set-bits.md
+              - Reverse bits: 15-bit-manipulation/reverse-bits.md
           - Medium:
               - Single number I/II/III: 15-bit-manipulation/single-number.md
               - XOR tricks: 15-bit-manipulation/xor-tricks.md
+              - Counting bits: 15-bit-manipulation/counting-bits.md
           - Hard:
               - Bitmask subsets: 15-bit-manipulation/bitmask-subsets.md
+              - Divide two integers: 15-bit-manipulation/divide-two-integers.md
           - Expert:
               - Maximum XOR: 15-bit-manipulation/maximum-xor.md
 

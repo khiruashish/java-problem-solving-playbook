@@ -26,12 +26,15 @@ the simplest and fastest solution (often just a sort plus one pass). When it doe
 | # | Problem | Level | Greedy choice |
 |---|---------|-------|---------------|
 | 1 | [Assign cookies](assign-cookies.md) | <span class="badge easy">Easy</span> | Smallest cookie that satisfies the least greedy child |
-| 2 | [Activity selection / non-overlapping intervals](activity-selection.md) | <span class="badge medium">Medium</span> | Earliest finish first |
-| 3 | [Jump game I & II](jump-game.md) | <span class="badge medium">Medium</span> | Furthest reach |
-| 4 | [Gas station](gas-station.md) | <span class="badge medium">Medium</span> | Restart after a deficit |
-| 5 | [Minimum platforms](minimum-platforms.md) | <span class="badge hard">Hard</span> | Sweep sorted arrivals and departures |
-| 6 | [Fractional knapsack](fractional-knapsack.md) | <span class="badge hard">Hard</span> | Best value/weight ratio |
-| 7 | [Huffman coding](huffman-coding.md) | <span class="badge expert">Expert</span> | Merge the two rarest |
+| 2 | [Lemonade change](lemonade-change.md) | <span class="badge easy">Easy</span> | Spend tens before fives |
+| 3 | [Activity selection / non-overlapping intervals](activity-selection.md) | <span class="badge medium">Medium</span> | Earliest finish first |
+| 4 | [Jump game I & II](jump-game.md) | <span class="badge medium">Medium</span> | Furthest reach |
+| 5 | [Gas station](gas-station.md) | <span class="badge medium">Medium</span> | Restart after a deficit |
+| 6 | [Non-overlapping intervals](non-overlapping-intervals.md) | <span class="badge medium">Medium</span> | Keep the earliest end |
+| 7 | [Minimum platforms](minimum-platforms.md) | <span class="badge hard">Hard</span> | Sweep sorted arrivals and departures |
+| 8 | [Fractional knapsack](fractional-knapsack.md) | <span class="badge hard">Hard</span> | Best value/weight ratio |
+| 9 | [Candy](candy.md) | <span class="badge hard">Hard</span> | Left pass + right pass, take the max |
+| 10 | [Huffman coding](huffman-coding.md) | <span class="badge expert">Expert</span> | Merge the two rarest |
 
 Every greedy solution here is tested against a **brute force or DP** on random inputs. That's the honest way to trust a greedy algorithm.
 

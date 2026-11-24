@@ -21,9 +21,12 @@
 | 2 | [Longest common prefix via a trie](trie-longest-common-prefix.md) | <span class="badge medium">Medium</span> | Single-child walk |
 | 3 | [Word search II](word-search-ii.md) | <span class="badge hard">Hard</span> | Trie + board DFS together |
 | 4 | [Autocomplete / search suggestions](autocomplete.md) | <span class="badge hard">Hard</span> | Top-3 stored per node |
-| 5 | [Segment tree](segment-tree.md) | <span class="badge expert">Expert</span> | Recursive build, query and update |
-| 6 | [Fenwick tree](fenwick-tree.md) | <span class="badge expert">Expert</span> | Lowbit `i & −i` |
-| 7 | [LFU cache](lfu-cache.md) | <span class="badge expert">Expert</span> | Frequency buckets |
+| 5 | [Sparse table (RMQ)](sparse-table.md) | <span class="badge hard">Hard</span> | Two overlapping power-of-two blocks |
+| 6 | [Segment tree](segment-tree.md) | <span class="badge expert">Expert</span> | Recursive build, query and update |
+| 7 | [Fenwick tree](fenwick-tree.md) | <span class="badge expert">Expert</span> | Lowbit `i & −i` |
+| 8 | [LFU cache](lfu-cache.md) | <span class="badge expert">Expert</span> | Frequency buckets |
+| 9 | [Lazy segment tree](lazy-segment-tree.md) | <span class="badge expert">Expert</span> | Tag fully-covered nodes, push on the way down |
+| 10 | [Consistent hashing](consistent-hashing.md) | <span class="badge expert">Expert</span> | Hash ring + virtual nodes + `ceilingEntry` |
 
 Also in this playbook: [LRU cache](../06-linked-list/lru-cache.md) · [HashMap from scratch](../08-hashing/my-hash-map.md) ·
 [Binary heap from scratch](../11-heap/binary-heap.md) · [Union-Find](../12-graphs/union-find.md) · [Maximum XOR (bitwise trie)](../15-bit-manipulation/maximum-xor.md).

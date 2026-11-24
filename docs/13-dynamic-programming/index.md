@@ -44,12 +44,15 @@ DP is **recursion plus never solving the same subproblem twice**. A problem is a
 | 4 | [Longest increasing subsequence](longest-increasing-subsequence.md) | <span class="badge medium">Medium</span> | `f(i) = 1 + max f(j), j < i, a[j] < a[i]` |
 | 5 | [Unique paths](unique-paths.md) | <span class="badge medium">Medium</span> | `f(r,c) = f(r−1,c) + f(r,c−1)` |
 | 6 | [0/1 knapsack](knapsack.md) | <span class="badge medium">Medium</span> | `f(i,w) = max(skip, take)` |
-| 7 | [Longest common subsequence](longest-common-subsequence.md) | <span class="badge hard">Hard</span> | match: `1 + f(i−1,j−1)`; else `max(f(i−1,j), f(i,j−1))` |
-| 8 | [Edit distance](edit-distance.md) | <span class="badge hard">Hard</span> | `1 + min(replace, delete, insert)` |
-| 9 | [Partition equal subset sum](partition-equal-subset.md) | <span class="badge hard">Hard</span> | subset sum to total/2 |
-| 10 | [Word break](word-break.md) | <span class="badge expert">Expert</span> | `f(i) = ∃ j: f(j) ∧ s[j..i) ∈ dict` |
-| 11 | [Matrix chain multiplication](matrix-chain-multiplication.md) | <span class="badge expert">Expert</span> | `min over split k` |
-| 12 | [Burst balloons](burst-balloons.md) | <span class="badge expert">Expert</span> | choose the **last** balloon to burst |
+| 7 | [Stock with cooldown](stock-with-cooldown.md) | <span class="badge medium">Medium</span> | 3-state machine: hold / sold / rest |
+| 8 | [Longest common subsequence](longest-common-subsequence.md) | <span class="badge hard">Hard</span> | match: `1 + f(i−1,j−1)`; else `max(f(i−1,j), f(i,j−1))` |
+| 9 | [Edit distance](edit-distance.md) | <span class="badge hard">Hard</span> | `1 + min(replace, delete, insert)` |
+| 10 | [Partition equal subset sum](partition-equal-subset.md) | <span class="badge hard">Hard</span> | subset sum to total/2 |
+| 11 | [Longest palindromic subsequence](longest-palindromic-subsequence.md) | <span class="badge hard">Hard</span> | Interval DP · = LCS(s, reverse s) |
+| 12 | [Word break](word-break.md) | <span class="badge expert">Expert</span> | `f(i) = ∃ j: f(j) ∧ s[j..i) ∈ dict` |
+| 13 | [Matrix chain multiplication](matrix-chain-multiplication.md) | <span class="badge expert">Expert</span> | `min over split k` |
+| 14 | [Burst balloons](burst-balloons.md) | <span class="badge expert">Expert</span> | choose the **last** balloon to burst |
+| 15 | [Egg drop](egg-drop.md) | <span class="badge expert">Expert</span> | Flip it: floors coverable with m moves |
 
 Also DP elsewhere: [Fibonacci](../04-recursion/fibonacci.md) · [Kadane](../02-arrays/max-subarray-sum.md) ·
 [Longest palindromic substring](../01-strings/longest-palindromic-substring.md) · [Buy & sell stock](../02-arrays/buy-sell-stock.md).
